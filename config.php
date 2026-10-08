@@ -1,6 +1,6 @@
 <?php
 // =========================================================
-// HelloSuggest Site Configuration (Core PHP, no database)
+// AussieWeb Growth Site Configuration (Core PHP, no database)
 // =========================================================
 
 session_start();
