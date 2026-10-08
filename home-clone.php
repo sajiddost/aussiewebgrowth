@@ -303,9 +303,9 @@ require __DIR__ . '/includes/header.php';
 <section id="pricing" class="section">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-price-tag-3-line"></i>Pricing</h3>
-			<h2 class="sec-title">Three Ways to <span>Work With Us</span></h2>
-			<p class="sec-lead">Projects follow the scope, not a template. These are the three shapes work usually takes &mdash; every quote starts from a free discussion about what you need.</p>
+			<h3 class="pill"><i class="ri-line-chart-line"></i>Pricing</h3>
+			<h2 class="sec-title">SEO Pricing <span>Plans</span></h2>
+			<p class="sec-lead">Transparent SEO packages for Australian businesses. Clear deliverables, no hidden fees.</p>
 		</div>
 		<div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
