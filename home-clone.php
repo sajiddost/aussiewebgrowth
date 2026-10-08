@@ -311,7 +311,7 @@ require __DIR__ . '/includes/header.php';
 			<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 				<div class="pricing-card fadeInUp" data-delay="0.1">
 					<h4>Small Business Website</h4>
-					<div class="pricing-price">$699<span class="pricing-cadence">from &middot; one-off</span></div>
+					<div class="pricing-price">$699<span class="pricing-cadence">/month</span></div>
 					<p class="pricing-desc">A professional, mobile-first website for your small business &mdash; the right pages, clear messaging, and SEO foundations, at a fixed price.</p>
 					<ul class="pricing-features">
 						<li><i class="ri-check-line"></i>Up to 5 pages, custom design</li>
@@ -327,7 +327,7 @@ require __DIR__ . '/includes/header.php';
 				<div class="pricing-card is-featured fadeInUp" data-delay="0.2">
 					<span class="pricing-badge">Most Popular</span>
 					<h4>Website + Support</h4>
-					<div class="pricing-price">$1,299<span class="pricing-cadence">from &middot; one-off</span></div>
+					<div class="pricing-price">$1,299<span class="pricing-cadence">/month</span></div>
 					<p class="pricing-desc">A new build or redesign, plus ongoing support to keep it updated, secure, and improving after launch.</p>
 					<ul class="pricing-features">
 						<li><i class="ri-check-line"></i>Everything in the small business build</li>
@@ -343,7 +343,7 @@ require __DIR__ . '/includes/header.php';
 			<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 				<div class="pricing-card fadeInUp" data-delay="0.3">
 					<h4>Ecommerce &amp; Custom Builds</h4>
-					<div class="pricing-price">$1,999<span class="pricing-cadence">from &middot; one-off</span></div>
+					<div class="pricing-price">$1,999<span class="pricing-cadence">/month</span></div>
 					<p class="pricing-desc">Online stores, booking systems, integrations, and larger multi-page builds &mdash; planned, staged, and quoted to the work.</p>
 					<ul class="pricing-features">
 						<li><i class="ri-check-line"></i>Store setup with secure payments</li>
