@@ -52,7 +52,6 @@ if (empty($GLOBALS['SERVICES'])) {
 						<ul class="footer-links">
 							<li><a href="<?= site_url('') ?>#home"><i class="ri-arrow-right-s-line"></i>Home</a></li>
 							<li><a href="<?= site_url('') ?>#how"><i class="ri-arrow-right-s-line"></i>How It Works</a></li>
-							<li><a href="<?= site_url('seo-web-design') ?>"><i class="ri-arrow-right-s-line"></i>SEO Web Design</a></li>
 							<li><a href="<?= site_url('seo-services') ?>"><i class="ri-arrow-right-s-line"></i>SEO Services</a></li>
 							<li><a href="<?= site_url('about') ?>"><i class="ri-arrow-right-s-line"></i>About</a></li>
 							<li><a href="<?= site_url('contact') ?>"><i class="ri-arrow-right-s-line"></i>Contact</a></li>
