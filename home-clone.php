@@ -2,8 +2,8 @@
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/functions.php';
 
-$pageTitle       = 'Web Development Services in Australia';
-$pageDescription = 'Professional web development services in Australia — custom websites for small businesses, WordPress builds, ecommerce, redesigns, and ongoing website support. Fast, mobile-first, SEO-ready websites across Sydney, Melbourne, Brisbane, Perth, Adelaide and beyond.';
+$pageTitle       = 'SEO Services Australia | AussieWeb Growth';
+$pageDescription = 'SEO services for Australian businesses — technical SEO, on-page SEO, content, link building, local SEO, ecommerce SEO, and SEO audits. Get more traffic, leads and visibility on Google.';
 $active          = 'home';
 
 // FAQ content doubles as FAQPage structured data for answer engines (AEO).
@@ -40,11 +40,11 @@ require __DIR__ . '/includes/header.php';
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-lg-6 col-md-12 fadeInUp" data-delay="0.1">
-				<h3 class="pill"><i class="ri-code-s-slash-line"></i>Web Development &bull; Australia-wide</h3>
-				<h1>Web Development Services in <span>Australia</span></h1>
-				<p class="hero-lead">Fast, mobile-first, SEO-ready websites built for Australian businesses &mdash; designed to load quickly, look professional, and turn visitors into customers.</p>
+				<h3 class="pill"><i class="ri-search-eye-line"></i>SEO Services &bull; Australia-wide</h3>
+				<h1>SEO Services in <span>Australia</span></h1>
+				<p class="hero-lead">Grow your traffic, leads, and sales with proven SEO services for Australian businesses — built for local visibility, technical performance, and measurable results.</p>
 				<div>
-					<a href="<?= site_url('contact') ?>" class="btn btn-primary">Get a Free Website Quote <i class="ri-rocket-line"></i></a>
+					<a href="<?= site_url('contact') ?>" class="btn btn-primary">Get a Free SEO Quote <i class="ri-rocket-line"></i></a>
 					<a href="#services" class="btn btn-dark">Explore Services</a>
 				</div>
 				<div class="hero-badges">
@@ -55,7 +55,7 @@ require __DIR__ . '/includes/header.php';
 			</div>
 			<div class="col-lg-6 col-md-12 fadeInUp" data-delay="0.25">
 				<div class="wd-hero-media">
-					<img src="<?= site_url('assets/img/web-development-services-in-australia-hero.webp') ?>" alt="Web development services in Australia" loading="eager">
+					<img src="<?= site_url('assets/img/seo-services.webp') ?>" alt="SEO services in Australia" loading="eager">
 				</div>
 			</div>
 		</div>
@@ -158,9 +158,9 @@ require __DIR__ . '/includes/header.php';
 <section class="section pt-0">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-projects-line"></i>Our Recent Projects</h3>
-			<h2 class="sec-title">Recent Websites <span>We&rsquo;ve Built</span></h2>
-			<p class="sec-lead">A selection of recent web development work for Australian businesses &mdash; each one designed mobile-first, built for speed, and shipped with SEO foundations.</p>
+			<h3 class="pill"><i class="ri-line-chart-line"></i>SEO Results</h3>
+			<h2 class="sec-title">Recent SEO <span>Wins</span></h2>
+			<p class="sec-lead">A selection of SEO campaigns for Australian businesses — driving more traffic, higher rankings, and qualified enquiries.</p>
 		</div>
 		<div class="row">
 			<?php
