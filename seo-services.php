@@ -183,7 +183,7 @@ require __DIR__ . '/includes/header.php';
 <!-- ========== END PROCESS ========== -->
 
 <!-- ========== SEARCH ISN'T JUST TEN BLUE LINKS ========== -->
-<section class="section" style="background: #E4022B; color: #fff;">
+<section class="section" style="background: #022169; color: #fff;">
 	<div class="container">
 		<div class="seo-content-wrap fadeInUp" data-delay="0.1" style="background: transparent; box-shadow: none;">
 			<div class="row">
