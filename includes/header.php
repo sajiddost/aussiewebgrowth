@@ -113,6 +113,7 @@ $vJs  = @filemtime(__DIR__ . '/../assets/js/hellosuggest.js') ?: date('YmdHis');
 					<ul>
 <li><a class="menu-link<?= $isHome ? ' active' : '' ?>" href="<?= site_url('') ?>#home">Home</a></li>
 						<li><a class="menu-link" href="<?= site_url('') ?>#how">How It Works</a></li>
+						<li><a class="menu-link<?= $active === 'seo-services' ? ' active' : '' ?>" href="<?= site_url('seo-services') ?>">Rank on Google</a></li>
 						<li><a class="menu-link<?= $active === 'about' ? ' active' : '' ?>" href="<?= site_url('about') ?>">About</a></li>
 						<li><a class="menu-link<?= $isContact ? ' active' : '' ?>" href="<?= site_url('contact') ?>">Contact</a></li>
 					</ul>
