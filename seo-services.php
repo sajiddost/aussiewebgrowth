@@ -43,7 +43,7 @@ require __DIR__ . '/includes/header.php';
 			<h3 class="pill"><i class="ri-sparkling-2-line"></i>Prioritized SEO &bull; AEO &bull; GEO &bull; Website Support</h3>
 			<h1>SEO That Gets <span>Prioritized,</span> Not Just Recommended</h1>
 			<p class="hero-lead">Most SEO reports list every problem they can find. Ours rank the same problems by business impact &mdash; so you know the five fixes that actually move the needle this quarter, and we make sure they happen.</p>
-			<p class="hero-copy">Search engines don't reward effort. They reward pages that answer a query better than the alternatives &mdash; and increasingly, pages that AI systems can understand well enough to cite. AussieWeb Growth is an SEO management company built around that reality. We work with small business owners who need results without wasted spend, and with enterprise teams managing thousands of pages across multiple markets.</p>
+			<p class="hero-copy">We focus on practical SEO that drives measurable traffic, leads, and revenue for Australian businesses. From technical fixes to content and authority, we deliver work that actually moves the needle.</p>
 			<div class="hero-audit">
 				<form method="get" action="<?= site_url('audit') ?>" class="hero-audit-form" novalidate>
 					<div class="hero-audit-input">
@@ -183,53 +183,42 @@ require __DIR__ . '/includes/header.php';
 <!-- ========== END PROCESS ========== -->
 
 <!-- ========== SEARCH ISN'T JUST TEN BLUE LINKS ========== -->
-<section class="section">
+<section class="section" style="background: #E4022B; color: #fff;">
 	<div class="container">
-		<div class="seo-content-wrap fadeInUp" data-delay="0.1">
-			<div class="row no-gutters">
-				<div class="col-lg-7">
-					<div class="seo-content-left">
+		<div class="seo-content-wrap fadeInUp" data-delay="0.1" style="background: transparent; box-shadow: none;">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="seo-content-left" style="background: transparent; padding: 0;">
 						<h3 class="pill" style="color:#fff;border-color:rgba(255,255,255,.25);"><i class="ri-sparkling-2-line"></i>Semantic SEO &bull; AEO &bull; GEO</h3>
-						<h2>Search Isn't Just <span style="color:var(--primary-color);">Ten Blue Links</span> Anymore</h2>
-						<p class="seo-lead">A user searching today might get an answer from Google's AI Overview, a response from ChatGPT, or a summary pulled by Perplexity, none of which require a click to your site. This changes what "ranking" actually means, and it's why semantic SEO, AEO, and GEO are core parts of how we work rather than add-ons.</p>
+						<h2 style="color:#fff;">Search Isn't Just <span style="color:#fff;">Ten Blue Links</span> Anymore</h2>
+						<p class="seo-lead" style="color:rgba(255,255,255,.9);">A user searching today might get an answer from Google's AI Overview, a response from ChatGPT, or a summary pulled by Perplexity, none of which require a click to your site. This changes what "ranking" actually means, and it's why semantic SEO, AEO, and GEO are core parts of how we work rather than add-ons.</p>
 						<div class="seo-feature-item">
-							<div class="seo-icon"><i class="ri-node-tree"></i></div>
+							<div class="seo-icon" style="background:rgba(255,255,255,.1); color:#fff;"><i class="ri-node-tree"></i></div>
 							<div>
-								<h3>Semantic SEO</h3>
-								<p>The foundation underneath this shift. Search engines stopped matching keywords a long time ago. They now try to understand entities, the relationships between them, and the intent behind a query. A page that never establishes what a company actually does, who it serves, and how it differs from adjacent services gives engines less to work with, no matter how many times the phrase appears on the page.</p>
+								<h3 style="color:#fff;">Semantic SEO</h3>
+								<p style="color:rgba(255,255,255,.9);">The foundation underneath this shift. Search engines stopped matching keywords a long time ago. They now try to understand entities, the relationships between them, and the intent behind a query.</p>
 							</div>
 						</div>
 						<div class="seo-feature-item">
-							<div class="seo-icon"><i class="ri-chat-smile-line"></i></div>
+							<div class="seo-icon" style="background:rgba(255,255,255,.1); color:#fff;"><i class="ri-chat-smile-line"></i></div>
 							<div>
-								<h3>AEO &mdash; Answer Engine Optimization</h3>
-								<p>AI-driven answer boxes and chat interfaces pull from content that answers a specific question clearly and early, often in the first sentence or two of a section. Burying the answer under three paragraphs of preamble worked fine for traditional rankings. It works against you here.</p>
+								<h3 style="color:#fff;">AEO &mdash; Answer Engine Optimization</h3>
+								<p style="color:rgba(255,255,255,.9);">AI-driven answer boxes and chat interfaces pull from content that answers a specific question clearly and early.</p>
 							</div>
 						</div>
 						<div class="seo-feature-item">
-							<div class="seo-icon"><i class="ri-robot-line"></i></div>
+							<div class="seo-icon" style="background:rgba(255,255,255,.1); color:#fff;"><i class="ri-robot-line"></i></div>
 							<div>
-								<h3>GEO &mdash; Generative Engine Optimization</h3>
-								<p>Traditional SEO focuses on ranking in search results. AEO focuses on getting your content selected as a direct answer. GEO focuses on getting cited by generative AI tools like ChatGPT or Perplexity. Getting cited depends on whether your content is structured in a way models can parse, whether your site reads as a credible source, and whether the information is stated plainly enough to be lifted and summarized without distortion.</p>
+								<h3 style="color:#fff;">GEO &mdash; Generative Engine Optimization</h3>
+								<p style="color:rgba(255,255,255,.9);">Traditional SEO focuses on ranking in search results. AEO focuses on getting your content selected as a direct answer. GEO focuses on getting cited by generative AI tools like ChatGPT or Perplexity.</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-5">
-					<div class="seo-content-right">
-						<img src="assets/img/seo-services.webp" alt="Our team in sync with how AI search works now" class="seo-vertical-img" loading="lazy">
-						<h3>Why it matters now</h3>
-						<div class="seo-point">
-							<i class="ri-question-answer-line"></i>
-							<div>
-								<strong>AI Overviews take the click</strong>
-								<span>A direct answer can satisfy the searcher without a visit to your site.</span>
-							</div>
-						</div>
-						<div class="seo-point">
-							<i class="ri-chat-4-line"></i>
-							<div>
-								<strong>Chatbots cite what they can parse</strong>
+			</div>
+		</div>
+	</div>
+</section>
 								<span>ChatGPT, Gemini and Perplexity lift from plainly structured, credible pages.</span>
 							</div>
 						</div>
