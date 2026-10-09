@@ -238,7 +238,7 @@ require __DIR__ . '/includes/header.php';
 					<a href="<?= site_url('affordable-website-design-small-business-australia') ?>" class="btn btn-primary">See Small Business Websites</a>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-12 fadeInUp" data-delay="0.3">
+			<div class="col-lg-6 col-md-12 fadeInUp order-first order-lg-last mb-4 mb-lg-0" data-delay="0.3">
 				<img src="<?= site_url('assets/img/Websites-for-Small-Businesses.webp') ?>" class="img-fluid rounded" alt="Websites for small businesses in Australia" loading="lazy" />
 			</div>
 		</div>

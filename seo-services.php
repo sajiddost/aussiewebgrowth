@@ -265,16 +265,11 @@ require __DIR__ . '/includes/header.php';
 					<h2>White Label SEO <span>Fulfillment</span></h2>
 					<p>If you run a marketing, web design, or advertising agency, clients ask for SEO eventually. Building that capability in-house means hiring specialists, keeping them current on algorithm changes, and absorbing the cost during slow months.</p>
 					<p>White label SEO handles the work behind the scenes, under your name. That includes technical audits, content strategy, link building, and monthly reporting formatted for your clients, not ours. Your client relationship stays yours. We stay invisible unless you decide otherwise.</p>
-					<ul class="hs-list-solid">
-						<li>Overflow support for one client or a full fulfillment partner for your entire book of business.</li>
-						<li>Pricing scales with volume, sized to your client mix &mdash; a five-client agency differs from a fifty-client one.</li>
-						<li>White-labeled ongoing website support too &mdash; maintenance under your brand, without you staffing it.</li>
-					</ul>
 					<a href="<?= site_url('contact') ?>" class="btn btn-primary">Discuss Your Client Mix</a>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 fadeInUp" data-delay="0.3">
-				<img src="<?= site_url('assets/img/white-label-SEO-fulfillment.webp') ?>" class="img-fluid rounded" alt="White label SEO fulfillment" />
+				<img src="<?= site_url('assets/img/white-label-SEO-fulfillment.jpg') ?>" class="img-fluid rounded" alt="White label SEO fulfillment" />
 			</div>
 		</div>
 	</div>
@@ -290,36 +285,28 @@ require __DIR__ . '/includes/header.php';
 			<p class="sec-lead">None of these situations call for the same tactics, which is one reason we're cautious about agencies that pitch identical packages regardless of client size or type.</p>
 		</div>
 		<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+			<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 				<div class="industry-card fadeInUp" data-delay="0.1">
 					<div class="industry-icon"><i class="ri-rocket-2-line"></i></div>
 					<h4>Starting From Zero</h4>
 					<p>If your current visibility is close to zero, the priority is usually foundational: technical health, a realistic content plan, and a small number of high-intent keywords you can actually compete for.</p>
-					<a href="<?= site_url('contact') ?>" class="industry-link">Start from zero <i class="ri-arrow-right-s-line"></i></a>
+					<a href="<?= site_url('contact') ?>" class="btn btn-primary" style="align-self:center;margin-top:auto;">Start from zero <i class="ri-arrow-right-s-line"></i></a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+			<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 				<div class="industry-card fadeInUp" data-delay="0.2">
 					<div class="industry-icon"><i class="ri-refresh-line"></i></div>
-					<h4>Managing an Existing Program</h4>
+					<h4 style="font-size:18px;">Managing an Existing Program</h4>
 					<p>If you want an existing program run more consistently, the priority shifts: a repeatable process, clear reporting, and incremental gains tracked over time rather than one big overhaul.</p>
-					<a href="<?= site_url('contact') ?>" class="industry-link">Take over a program <i class="ri-arrow-right-s-line"></i></a>
+					<a href="<?= site_url('contact') ?>" class="btn btn-primary" style="align-self:center;margin-top:auto;">Take over a program <i class="ri-arrow-right-s-line"></i></a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+			<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 				<div class="industry-card fadeInUp" data-delay="0.3">
-					<div class="industry-icon"><i class="ri-server-line"></i></div>
-					<h4>Large Sites With Technical Debt</h4>
-					<p>If you're dealing with a large site carrying years of technical debt, the priority changes again: scale, governance, and fixes that can be templated across thousands of pages without breaking something else.</p>
-					<a href="<?= site_url('contact') ?>" class="industry-link">Tackle technical debt <i class="ri-arrow-right-s-line"></i></a>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-				<div class="industry-card fadeInUp" data-delay="0.4">
 					<div class="industry-icon"><i class="ri-building-2-line"></i></div>
 					<h4>Agency Owners</h4>
 					<p>If you're an agency owner, the priority isn't strategy at all. It's finding a partner who can deliver consistent, white-labeled work without you having to manage the details.</p>
-					<a href="<?= site_url('contact') ?>" class="industry-link">White label partner <i class="ri-arrow-right-s-line"></i></a>
+					<a href="<?= site_url('contact') ?>" class="btn btn-primary" style="align-self:center;margin-top:auto;">White label partner <i class="ri-arrow-right-s-line"></i></a>
 				</div>
 			</div>
 		</div>
@@ -328,33 +315,7 @@ require __DIR__ . '/includes/header.php';
 <!-- ========== END WHO THIS IS FOR ========== -->
 
 <!-- ========== GLOBAL / PRICING / NO PROMISES ========== -->
-<section class="section">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 col-md-12 mb-4">
-				<div class="feature-card fadeInUp" data-delay="0.1">
-					<i class="ri-earth-line"></i>
-					<h4>Global Reach, Local Understanding</h4>
-					<p>AussieWeb Growth works with clients across regions and time zones. The underlying principles of crawlability, relevance, and authority hold globally, but execution doesn't. A campaign built for one market and a multilingual enterprise rollout in another require different technical setups, different competitive research, and different content approaches. We adjust the specifics to the market while keeping the standards behind the work consistent.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-12 mb-4">
-				<div class="feature-card fadeInUp" data-delay="0.2">
-					<i class="ri-money-dollar-circle-line"></i>
-					<h4>Pricing Tracks Scope, Not Packages</h4>
-					<p>We're often asked whether we're an affordable SEO company or a premium one. The honest answer is that it depends on scope. A small business needing to fix a handful of foundational issues costs less than an enterprise engagement spanning multiple markets and thousands of pages. Pricing is tied to the actual work involved, never a fixed package designed to look comprehensive on a sales page. <a class="process-link" href="<?= site_url('seo-on-pricing-reality') ?>">Read how we price engagements.</a></p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-12 mb-4">
-				<div class="feature-card fadeInUp" data-delay="0.3">
-					<i class="ri-shield-check-line"></i>
-					<h4>A Note on What We Won't Promise</h4>
-					<p>We won't guarantee a specific ranking position, a fixed percentage increase in traffic, or a set number of AI citations. Anyone who guarantees those outcomes is either overconfident or not being straight with you. Algorithms change, competitors adjust, and results depend on factors outside any agency's control. What we can commit to is a clear process, honest reporting, and prioritization based on evidence rather than guesswork.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+
 <!-- ========== END GLOBAL REACH ========== -->
 
 <!-- ========== PRICING ========== -->
@@ -428,7 +389,7 @@ require __DIR__ . '/includes/header.php';
 				<div class="faq-wrap fadeInUp" data-delay="0.2">
 					<i class="ri-chat-question-line"></i>
 					<h2>Still have a question? Let's talk.</h2>
-					<a href="<?= site_url('contact') ?>" class="btn btn-dark mb-2">Get a free assessment</a>
+					<a href="<?= site_url('contact') ?>" class="btn btn-primary mb-2">Get a free assessment</a>
 					<p>Prefer to email? <a href="mailto:<?= e(CONTACT_EMAIL) ?>"><?= e(CONTACT_EMAIL) ?></a></p>
 				</div>
 			</div>
@@ -448,23 +409,5 @@ require __DIR__ . '/includes/header.php';
 	</div>
 </section>
 <!-- ========== END FAQ ========== -->
-
-<!-- ========== CTA ========== -->
-<section class="section">
-	<div class="container">
-		<div class="cta-band fadeInUp" data-delay="0.1">
-			<div class="row align-items-center">
-				<div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
-					<h2>Ready to See Where You Stand?</h2>
-					<p>If you're comparing SEO consulting services or trying to figure out what's actually holding your site back, start with an assessment rather than a sales pitch. We&rsquo;ll show you the five fixes that matter most.</p>
-				</div>
-				<div class="col-lg-5 col-md-12 text-lg-right">
-					<a href="<?= site_url('contact') ?>" class="btn btn-white">Get a Free SEO Assessment</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- ========== END CTA ========== -->
 
 <?php require __DIR__ . '/includes/footer.php'; ?>
