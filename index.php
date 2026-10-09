@@ -4,7 +4,7 @@ require_once __DIR__ . '/includes/functions.php';
 
 $pageTitle       = 'Web Development Services in Australia';
 $pageDescription = 'Professional web development services in Australia — custom websites for small businesses, WordPress builds, ecommerce, redesigns, and ongoing website support. Fast, mobile-first, SEO-ready websites across Sydney, Melbourne, Brisbane, Perth, Adelaide and beyond.';
-$active          = 'home';
+$active          = '';
 
 // FAQ content doubles as FAQPage structured data for answer engines (AEO).
 $faqs = [
