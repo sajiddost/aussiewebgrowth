@@ -1,9 +1,8 @@
 ﻿<?php
 require_once __DIR__ . "/config.php";
 require_once __DIR__ . "/includes/functions.php";
-    'pageTitle'       => 'SEO Services | AussieWeb Growth',
-    'pageDescription' => 'SEO services for Australian businesses — technical SEO audits, on-page SEO, local SEO, link building, and SEO strategy. Drive more traffic, leads and revenue from Google.',
-    'active'          => 'seo-services',
+$pageTitle       = "SEO Services | AussieWeb Growth";
+$pageDescription = "SEO services for Australian businesses — technical SEO audits, on-page SEO, local SEO, link building, and SEO strategy. Drive more traffic, leads and revenue from Google.";$active = "seo-services";
 $pageDescription = 'SEO services for Australian businesses in a typical SEO audit down to the five that actually move rankings, traffic, and revenue — then makes sure they happen. Technical SEO, SEO management, AEO & GEO, and ongoing website support.';
 $active          = 'home';
 
