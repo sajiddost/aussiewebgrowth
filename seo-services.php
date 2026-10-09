@@ -225,22 +225,15 @@ require __DIR__ . '/includes/header.php';
 						<div class="seo-point">
 							<i class="ri-eye-off-line"></i>
 							<div>
-								<strong>Ranking isn't enough anymore</strong>
-								<span>Being invisible to AI answers means losing visibility in both places.</span>
-							</div>
-						</div>
-						<div class="seo-point">
-							<i class="ri-shield-check-line"></i>
-							<div>
-								<strong>The fundamentals still apply</strong>
-								<span>Crawlability and entity clarity underpin every channel, classic or generative.</span>
+								<strong>AI Visibility</strong>
+								<span>Being visible in AI answers helps capture opportunities where users don't click traditional results.</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<p class="sec-lead mt-4 fadeInUp" data-delay="0.2">None of this replaces traditional SEO. A technically broken site won't get crawled well enough to be cited by an AI model any more than it'll rank in classic search. A technically sound site that never structures its content for entity clarity is leaving visibility on the table in both places.</p>
+						</div>
 	</div>
 </section>
 <!-- ========== END SEARCH ========== -->
