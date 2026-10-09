@@ -192,25 +192,33 @@ require __DIR__ . '/includes/header.php';
 						<h3 class="pill" style="color:#fff;border-color:rgba(255,255,255,.25);"><i class="ri-sparkling-2-line"></i>Semantic SEO &bull; AEO &bull; GEO</h3>
 						<h2 style="color:#fff;">Search Isn't Just <span style="color:#fff;">Ten Blue Links</span> Anymore</h2>
 						<p class="seo-lead" style="color:rgba(255,255,255,.9);">A user searching today might get an answer from Google's AI Overview, a response from ChatGPT, or a summary pulled by Perplexity, none of which require a click to your site. This changes what "ranking" actually means, and it's why semantic SEO, AEO, and GEO are core parts of how we work rather than add-ons.</p>
-						<div class="seo-feature-item">
-							<div class="seo-icon" style="background:rgba(255,255,255,.1); color:#fff;"><i class="ri-node-tree"></i></div>
-							<div>
-								<h3 style="color:#fff;">Semantic SEO</h3>
-								<p style="color:rgba(255,255,255,.9);">The foundation underneath this shift. Search engines stopped matching keywords a long time ago. They now try to understand entities, the relationships between them, and the intent behind a query.</p>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+								<div class="seo-feature-item h-100" style="flex-direction:column; align-items:flex-start;">
+									<div class="seo-icon" style="background:rgba(255,255,255,.1); color:#fff;"><i class="ri-node-tree"></i></div>
+									<div>
+										<h3 style="color:#fff;">Semantic SEO</h3>
+										<p style="color:rgba(255,255,255,.9);">The foundation underneath this shift. Search engines stopped matching keywords a long time ago. They now try to understand entities, the relationships between them, and the intent behind a query.</p>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="seo-feature-item">
-							<div class="seo-icon" style="background:rgba(255,255,255,.1); color:#fff;"><i class="ri-chat-smile-line"></i></div>
-							<div>
-								<h3 style="color:#fff;">AEO &mdash; Answer Engine Optimization</h3>
-								<p style="color:rgba(255,255,255,.9);">AI-driven answer boxes and chat interfaces pull from content that answers a specific question clearly and early.</p>
+							<div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+								<div class="seo-feature-item h-100" style="flex-direction:column; align-items:flex-start;">
+									<div class="seo-icon" style="background:rgba(255,255,255,.1); color:#fff;"><i class="ri-chat-smile-line"></i></div>
+									<div>
+										<h3 style="color:#fff;">AEO &mdash; Answer Engine Optimization</h3>
+										<p style="color:rgba(255,255,255,.9);">AI-driven answer boxes and chat interfaces pull from content that answers a specific question clearly and early.</p>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="seo-feature-item">
-							<div class="seo-icon" style="background:rgba(255,255,255,.1); color:#fff;"><i class="ri-robot-line"></i></div>
-							<div>
-								<h3 style="color:#fff;">GEO &mdash; Generative Engine Optimization</h3>
-								<p style="color:rgba(255,255,255,.9);">Traditional SEO focuses on ranking in search results. AEO focuses on getting your content selected as a direct answer. GEO focuses on getting cited by generative AI tools like ChatGPT or Perplexity.</p>
+							<div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+								<div class="seo-feature-item h-100" style="flex-direction:column; align-items:flex-start;">
+									<div class="seo-icon" style="background:rgba(255,255,255,.1); color:#fff;"><i class="ri-robot-line"></i></div>
+									<div>
+										<h3 style="color:#fff;">GEO &mdash; Generative Engine Optimization</h3>
+										<p style="color:rgba(255,255,255,.9);">Traditional SEO focuses on ranking in search results. AEO focuses on getting your content selected as a direct answer. GEO focuses on getting cited by generative AI tools like ChatGPT or Perplexity.</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -219,23 +227,7 @@ require __DIR__ . '/includes/header.php';
 		</div>
 	</div>
 </section>
-								<span>ChatGPT, Gemini and Perplexity lift from plainly structured, credible pages.</span>
-							</div>
-						</div>
-						<div class="seo-point">
-							<i class="ri-eye-off-line"></i>
-							<div>
-								<strong>AI Visibility</strong>
-								<span>Being visible in AI answers helps capture opportunities where users don't click traditional results.</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-						</div>
-	</div>
-</section>
+
 <!-- ========== END SEARCH ========== -->
 
 <!-- ========== CORE SEO SERVICES ========== -->
