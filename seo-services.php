@@ -1,14 +1,15 @@
 ﻿<?php
-require_once __DIR__ . '/config.php';
-require_once __DIR__ . '/includes/functions.php';
-
-$pageTitle       = 'SEO That Gets Prioritized, Not Just Recommended';
-$pageDescription = 'HelloSuggest ranks the fifty problems in a typical SEO audit down to the five that actually move rankings, traffic, and revenue — then makes sure they happen. Technical SEO, SEO management, AEO & GEO, and ongoing website support.';
+require_once __DIR__ . "/config.php";
+require_once __DIR__ . "/includes/functions.php";
+    'pageTitle'       => 'SEO Services | AussieWeb Growth',
+    'pageDescription' => 'SEO services for Australian businesses — technical SEO audits, on-page SEO, local SEO, link building, and SEO strategy. Drive more traffic, leads and revenue from Google.',
+    'active'          => 'seo-services',
+$pageDescription = 'SEO services for Australian businesses in a typical SEO audit down to the five that actually move rankings, traffic, and revenue — then makes sure they happen. Technical SEO, SEO management, AEO & GEO, and ongoing website support.';
 $active          = 'home';
 
 // FAQ content doubles as FAQPage structured data for answer engines (AEO).
 $faqs = [
-    ['q' => 'How is HelloSuggest different from other SEO agencies?', 'a' => 'Most of the difference comes down to prioritization. We\'d rather hand you five fixes that matter than fifty that never get implemented.'],
+    ['q' => 'How is AussieWeb Growth different from other SEO agencies?', 'a' => 'Most of the difference comes down to prioritization. We\'d rather hand you five fixes that matter than fifty that never get implemented.'],
     ['q' => 'Do you work with small businesses or only larger companies?', 'a' => 'Both. Strategy and pricing scale to the size and complexity of the site, not the other way around.'],
     ['q' => 'What\'s the difference between traditional SEO and AEO or GEO?', 'a' => 'Traditional SEO focuses on ranking in search results. AEO focuses on getting your content selected as a direct answer, in a featured snippet or an AI Overview. GEO focuses on getting cited by generative AI tools like ChatGPT or Perplexity. They overlap with core SEO fundamentals, but the content structure and clarity requirements differ.'],
     ['q' => 'Do I need to choose between semantic SEO and traditional keyword targeting?', 'a' => 'No. Semantic SEO is a more accurate way of thinking about relevance, covering the entities and concepts a topic actually involves instead of chasing exact-match phrases. Keyword research still matters. It just isn\'t the whole picture anymore.'],
@@ -43,7 +44,7 @@ require __DIR__ . '/includes/header.php';
 			<h3 class="pill"><i class="ri-sparkling-2-line"></i>Prioritized SEO &bull; AEO &bull; GEO &bull; Website Support</h3>
 			<h1>SEO That Gets <span>Prioritized,</span> Not Just Recommended</h1>
 			<p class="hero-lead">Most SEO reports list every problem they can find. Ours rank the same problems by business impact &mdash; so you know the five fixes that actually move the needle this quarter, and we make sure they happen.</p>
-			<p class="hero-copy">Search engines don't reward effort. They reward pages that answer a query better than the alternatives &mdash; and increasingly, pages that AI systems can understand well enough to cite. HelloSuggest is an SEO management company built around that reality. We work with small business owners who need results without wasted spend, and with enterprise teams managing thousands of pages across multiple markets.</p>
+			<p class="hero-copy">Search engines don't reward effort. They reward pages that answer a query better than the alternatives &mdash; and increasingly, pages that AI systems can understand well enough to cite. AussieWeb Growth is an SEO management company built around that reality. We work with small business owners who need results without wasted spend, and with enterprise teams managing thousands of pages across multiple markets.</p>
 			<div class="hero-audit">
 				<form method="get" action="<?= site_url('audit') ?>" class="hero-audit-form" novalidate>
 					<div class="hero-audit-input">
@@ -361,7 +362,7 @@ require __DIR__ . '/includes/header.php';
 				<div class="feature-card fadeInUp" data-delay="0.1">
 					<i class="ri-earth-line"></i>
 					<h4>Global Reach, Local Understanding</h4>
-					<p>HelloSuggest works with clients across regions and time zones. The underlying principles of crawlability, relevance, and authority hold globally, but execution doesn't. A campaign built for one market and a multilingual enterprise rollout in another require different technical setups, different competitive research, and different content approaches. We adjust the specifics to the market while keeping the standards behind the work consistent.</p>
+					<p>AussieWeb Growth works with clients across regions and time zones. The underlying principles of crawlability, relevance, and authority hold globally, but execution doesn't. A campaign built for one market and a multilingual enterprise rollout in another require different technical setups, different competitive research, and different content approaches. We adjust the specifics to the market while keeping the standards behind the work consistent.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-12 mb-4">
