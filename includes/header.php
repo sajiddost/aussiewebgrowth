@@ -95,7 +95,7 @@ $vJs  = @filemtime(__DIR__ . '/../assets/js/hellosuggest.js') ?: date('YmdHis');
 	<?= $extraSchema ?? '' ?>
 	<meta name="google-site-verification" content="dy91JVJM_jZdN7X5zhh-GhEwJ2xjlX0IDIfdEvWpEHg" />
 </head>
-<body>
+<body<?= $active === 'seo-services' ? ' class="seo-services-page"' : '' ?>>
 
 	<!-- ========== Header / Nav ========== -->
 	<header id="header" class="site-header">

@@ -2231,3 +2231,13 @@ html.js .fadeInUp.visible {
 	.reviews-prev { left: 0; }
 	.reviews-next { right: 0; }
 }
+
+/* =========================================================
+   SEO services page: tighter, consistent section spacing
+   ========================================================= */
+.seo-services-page section:not(.hero) { padding: 70px 0; }
+.seo-services-page .hero { padding: 30px 0 55px; }
+@media (max-width: 767.98px) {
+	.seo-services-page section:not(.hero) { padding: 45px 0; }
+	.seo-services-page .hero { padding: 20px 0 40px; }
+}

@@ -4,7 +4,7 @@ require_once __DIR__ . "/includes/functions.php";
 $pageTitle       = "SEO Services | AussieWeb Growth";
 $pageDescription = "SEO services for Australian businesses — technical SEO audits, on-page SEO, local SEO, link building, and SEO strategy. Drive more traffic, leads and revenue from Google.";$active = "seo-services";
 $pageDescription = 'SEO services for Australian businesses in a typical SEO audit down to the five that actually move rankings, traffic, and revenue — then makes sure they happen. Technical SEO, SEO management, AEO & GEO, and ongoing website support.';
-$active          = 'home';
+$active          = 'seo-services';
 
 // FAQ content doubles as FAQPage structured data for answer engines (AEO).
 $faqs = [
@@ -36,14 +36,11 @@ require __DIR__ . '/includes/header.php';
 
 <!-- ========== HERO ========== -->
 <section id="home" class="hero section">
-	<div class="hero-glow hero-glow-1"></div>
-	<div class="hero-glow hero-glow-2"></div>
 	<div class="container">
 		<div class="col-lg-10 col-xs-12 mx-auto text-center no-padding fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-sparkling-2-line"></i>Prioritized SEO &bull; AEO &bull; GEO &bull; Website Support</h3>
+			<h3 class="pill"><i class="ri-sparkling-2-line"></i>Aussie Web Rank</h3>
 			<h1>SEO That Gets <span>Prioritized,</span> Not Just Recommended</h1>
 			<p class="hero-lead">Most SEO reports list every problem they can find. Ours rank the same problems by business impact &mdash; so you know the five fixes that actually move the needle this quarter, and we make sure they happen.</p>
-			<p class="hero-copy">We focus on practical SEO that drives measurable traffic, leads, and revenue for Australian businesses. From technical fixes to content and authority, we deliver work that actually moves the needle.</p>
 			<div class="hero-audit">
 				<form method="get" action="<?= site_url('audit') ?>" class="hero-audit-form" novalidate>
 					<div class="hero-audit-input">
@@ -53,15 +50,6 @@ require __DIR__ . '/includes/header.php';
 					<button type="submit" class="btn btn-primary">Free SEO Audit <i class="ri-rocket-line"></i></button>
 				</form>
 				<p class="hero-audit-note"><i class="ri-cpu-line"></i>Instant, free technical audit &mdash; titles, meta, headings, schema, AI-readiness and speed</p>
-			</div>
-			<div>
-				<a href="<?= site_url('contact') ?>" class="btn btn-primary">Get a Free SEO Assessment</a>
-				<a href="#services" class="btn btn-dark">Explore Services</a>
-			</div>
-			<div class="hero-badges">
-				<span><i class="ri-shield-check-line"></i>White-hat, Google-compliant</span>
-				<span><i class="ri-time-line"></i>Responses within 24 hours</span>
-				<span><i class="ri-emotion-happy-line"></i>No ranking guarantees, no tricks</span>
 			</div>
 		</div>
 	</div>
