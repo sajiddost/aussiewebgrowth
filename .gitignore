@@ -1,0 +1,7 @@
+# Runtime data - visitor-submitted leads and logs must never be committed
+data/leads.jsonl
+data/notifications.log
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
