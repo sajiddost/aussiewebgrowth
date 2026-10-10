@@ -269,7 +269,7 @@ require __DIR__ . '/includes/header.php';
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 fadeInUp" data-delay="0.3">
-				<img src="<?= site_url('assets/img/white-label-SEO-fulfillment.jpg') ?>" class="img-fluid rounded" alt="White label SEO fulfillment" />
+				<img src="<?= site_url('assets/img/white-label-SEO-fulfillment.jpg') ?>?v=<?= @filemtime(__DIR__ . '/assets/img/white-label-SEO-fulfillment.jpg') ?: time() ?>" class="img-fluid rounded" alt="White label SEO fulfillment" />
 			</div>
 		</div>
 	</div>
