@@ -23,7 +23,6 @@ $urls = [
     ['loc' => absolute_url(''),               'lastmod' => page_lastmod('index.php'),        'priority' => '1.0'],
     ['loc' => absolute_url('about'),          'lastmod' => page_lastmod('about.php'),        'priority' => '0.8'],
     ['loc' => absolute_url('contact'),        'lastmod' => page_lastmod('contact.php'),      'priority' => '0.8'],
-    ['loc' => absolute_url('blog'),           'lastmod' => page_lastmod('blog.php'),         'priority' => '0.8'],
     ['loc' => absolute_url('seo-services'),   'lastmod' => page_lastmod('seo-services.php'), 'priority' => '0.8'],
     ['loc' => absolute_url('audit'),          'lastmod' => page_lastmod('audit.php'),        'priority' => '0.7'],
 ];
