@@ -23,8 +23,9 @@ if (file_exists(__DIR__ . '/config.local.php')) {
 } else {
     // Fallback only, so a fresh checkout without config.local.php still boots.
     // This is NOT safe for production - create config.local.php before going live.
-    const ADMIN_USERNAME = 'admin';
-    const ADMIN_PASSWORD = 'change-me-now';
+    // (define(), not const - const is compile-time and can't sit inside an if/else.)
+    define('ADMIN_USERNAME', 'admin');
+    define('ADMIN_PASSWORD', 'change-me-now');
 }
 
 // ---------- File storage (JSONL / JSON, no database) ----------
