@@ -5,6 +5,7 @@ require_once __DIR__ . '/includes/functions.php';
 $pageTitle       = 'Web Development Services in Australia';
 $pageDescription = 'Professional web development services in Australia — custom websites for small businesses, WordPress builds, ecommerce, redesigns, and ongoing website support. Fast, mobile-first, SEO-ready websites across Sydney, Melbourne, Brisbane, Perth, Adelaide and beyond.';
 $active          = '';
+$preloadImage    = 'assets/img/web-development-services-in-australia-hero.webp';
 
 // FAQ content doubles as FAQPage structured data for answer engines (AEO).
 $faqs = [
@@ -40,7 +41,7 @@ require __DIR__ . '/includes/header.php';
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-lg-6 col-md-12 fadeInUp" data-delay="0.1">
-				<h3 class="pill"><i class="ri-code-s-slash-line"></i>Web Development &bull; Australia-wide</h3>
+				<p class="pill"><i class="ri-code-s-slash-line"></i>Web Development &bull; Australia-wide</p>
 				<h1>Web Development Services in <span>Australia</span></h1>
 				<p class="hero-lead">Fast, mobile-first, SEO-ready websites built for Australian businesses &mdash; designed to load quickly, look professional, and turn visitors into customers.</p>
 				<div>
@@ -55,7 +56,7 @@ require __DIR__ . '/includes/header.php';
 			</div>
 			<div class="col-lg-6 col-md-12 fadeInUp" data-delay="0.25">
 				<div class="wd-hero-media">
-					<img src="<?= site_url('assets/img/web-development-services-in-australia-hero.webp') ?>" alt="Web development services in Australia" loading="eager">
+					<img src="<?= site_url('assets/img/web-development-services-in-australia-hero.webp') ?>" alt="Web development services in Australia" width="827" height="577" loading="eager" fetchpriority="high">
 				</div>
 			</div>
 		</div>
@@ -115,7 +116,7 @@ require __DIR__ . '/includes/header.php';
 <section id="how" class="section">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-refresh-line"></i>How We Work</h3>
+			<p class="pill"><i class="ri-refresh-line"></i>How We Work</p>
 			<h2 class="sec-title">A Repeatable Build Process, <span>Not a Black Box</span></h2>
 			<p class="sec-lead">Discovery, Design, Build, Launch &mdash; run as a process with clear milestones. Most website projects don&rsquo;t go wrong from a lack of talent. They go wrong from a lack of structure. We fix that.</p>
 		</div>
@@ -158,7 +159,7 @@ require __DIR__ . '/includes/header.php';
 <section class="section pt-0">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-projects-line"></i>Our Recent Projects</h3>
+			<p class="pill"><i class="ri-projects-line"></i>Our Recent Projects</p>
 			<h2 class="sec-title">Recent Websites <span>We&rsquo;ve Built</span></h2>
 			<p class="sec-lead">A selection of recent web development work for Australian businesses &mdash; each one designed mobile-first, built for speed, and shipped with SEO foundations.</p>
 		</div>
@@ -172,7 +173,7 @@ require __DIR__ . '/includes/header.php';
 			<div class="col-lg-6 col-md-6 col-sm-12 mb-4">
 				<div class="project-card fadeInUp" data-delay="<?= 0.1 + $i * 0.1 ?>">
 					<div class="project-thumb">
-						<img src="<?= site_url($p['img']) ?>" alt="<?= e($p['title']) ?> - web development project in Australia" loading="lazy">
+						<img src="<?= site_url($p['img']) ?>" alt="<?= e($p['title']) ?> - web development project in Australia" width="1920" height="2408" loading="lazy">
 					</div>
 				</div>
 			</div>
@@ -187,7 +188,7 @@ require __DIR__ . '/includes/header.php';
 <section class="section wd-enough">
 	<div class="container">
 		<div class="sec-header fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-sparkling-2-line"></i>Design &bull; Speed &bull; Search</h3>
+			<p class="pill"><i class="ri-sparkling-2-line"></i>Design &bull; Speed &bull; Search</p>
 			<h2 class="sec-title">A Website That <span>Looks Good</span> Isn&rsquo;t Enough</h2>
 			<p class="sec-lead">Your website is usually the first thing a customer sees of your business, and it&rsquo;s being judged in seconds &mdash; on a phone, often on a slow connection. It has to load fast, make what you do obvious, and make the next step easy. That&rsquo;s the standard we build to.</p>
 		</div>
@@ -239,7 +240,7 @@ require __DIR__ . '/includes/header.php';
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 fadeInUp order-first order-lg-last mb-4 mb-lg-0" data-delay="0.3">
-				<img src="<?= site_url('assets/img/Websites-for-Small-Businesses.webp') ?>" class="img-fluid rounded" alt="Websites for small businesses in Australia" loading="lazy" />
+				<img src="<?= site_url('assets/img/Websites-for-Small-Businesses.webp') ?>" class="img-fluid rounded" alt="Websites for small businesses in Australia" width="827" height="577" loading="lazy" />
 			</div>
 		</div>
 	</div>
@@ -250,7 +251,7 @@ require __DIR__ . '/includes/header.php';
 <section class="section pt-0">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-user-heart-line"></i>Who This Is For</h3>
+			<p class="pill"><i class="ri-user-heart-line"></i>Who This Is For</p>
 			<h2 class="sec-title">Different Businesses. <span>Different Websites.</span></h2>
 			<p class="sec-lead">None of these situations call for the same build, which is one reason we&rsquo;re cautious about agencies that quote identical packages regardless of the business.</p>
 		</div>
@@ -295,7 +296,7 @@ require __DIR__ . '/includes/header.php';
 
 <!-- ========== FULL-WIDTH IMAGE BANNER ========== -->
 <section class="wd-fullimg-section">
-	<img src="<?= site_url('assets/img/australian-flag.jpg') ?>" alt="Web development services across Australia - Australian flag" loading="lazy">
+	<img src="<?= site_url('assets/img/australian-flag.jpg') ?>" alt="Web development services across Australia - Australian flag" width="1000" height="500" loading="lazy">
 </section>
 <!-- ========== END FULL-WIDTH IMAGE BANNER ========== -->
 
@@ -303,7 +304,7 @@ require __DIR__ . '/includes/header.php';
 <section id="pricing" class="section">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-price-tag-3-line"></i>Pricing</h3>
+			<p class="pill"><i class="ri-price-tag-3-line"></i>Pricing</p>
 			<h2 class="sec-title">Three Ways to <span>Work With Us</span></h2>
 			<p class="sec-lead">Projects follow the scope, not a template. These are the three shapes work usually takes &mdash; every quote starts from a free discussion about what you need.</p>
 		</div>
@@ -365,7 +366,7 @@ require __DIR__ . '/includes/header.php';
 <section id="reviews" class="section pt-0">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-star-smile-line"></i>Reviews</h3>
+			<p class="pill"><i class="ri-star-smile-line"></i>Reviews</p>
 			<h2 class="sec-title">What Our Clients <span>Say About Us</span></h2>
 			<p class="sec-lead">Feedback from Australian businesses we&rsquo;ve designed, built, and supported websites for.</p>
 		</div>
@@ -467,7 +468,7 @@ require __DIR__ . '/includes/header.php';
 <section id="faqs" class="section">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-question-answer-line"></i>FAQ</h3>
+			<p class="pill"><i class="ri-question-answer-line"></i>FAQ</p>
 			<h2 class="sec-title">Frequently Asked <span>Questions</span></h2>
 		</div>
 		<div class="row">

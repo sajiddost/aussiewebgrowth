@@ -7,7 +7,7 @@ session_start();
 
 // ---------- Site settings ----------
 const SITE_NAME    = 'AussieWeb Growth';
-const SITE_TAGLINE = 'SEO That Gets Prioritized, Not Just Recommended';
+const SITE_TAGLINE = 'SEO That Gets Prioritised, Not Just Recommended';
 
 // Public contact email (shown on the site and used for lead notifications)
 const CONTACT_EMAIL = 'info@aussiewebgrowth.com';

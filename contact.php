@@ -88,7 +88,7 @@ require __DIR__ . '/includes/header.php';
 <section class="page-hero section">
 	<div class="container">
 		<div class="col-lg-9 col-xs-12 mx-auto text-center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-mail-line"></i>Contact</h3>
+			<p class="pill"><i class="ri-mail-line"></i>Contact</p>
 			<h1>Get a Free SEO Assessment</h1>
 			<p class="sec-lead mx-auto">Tell us about your site and we'll show you the five fixes, out of the fifty in a typical audit, that will actually move rankings and revenue this quarter. No sales pitch, no 40-page report.</p>
 		</div>

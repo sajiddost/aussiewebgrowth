@@ -21,7 +21,7 @@ require __DIR__ . '/includes/header.php';
 <section class="page-hero section">
 	<div class="container">
 		<div class="col-lg-9 col-xs-12 mx-auto text-center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-error-warning-line"></i>404 Error</h3>
+			<p class="pill"><i class="ri-error-warning-line"></i>404 Error</p>
 			<h1 style="font-size:clamp(44px,7vw,84px);line-height:1.05;">Page Not Found</h1>
 			<p class="sec-lead mx-auto" style="max-width:640px;">The page you&rsquo;re looking for doesn&rsquo;t exist, has moved, or never lived here. No problem &mdash; here&rsquo;s how to find what you need.</p>
 			<div class="svc-kicker-row justify-content-center">
@@ -38,7 +38,7 @@ require __DIR__ . '/includes/header.php';
 <section class="section pt-0">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-compass-3-line"></i>Keep exploring</h3>
+			<p class="pill"><i class="ri-compass-3-line"></i>Keep exploring</p>
 			<h2 class="sec-title">Popular <span>Destinations</span></h2>
 		</div>
 		<div class="row">

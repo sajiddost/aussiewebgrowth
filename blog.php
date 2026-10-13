@@ -32,7 +32,7 @@ require __DIR__ . '/includes/header.php';
 <section class="page-hero section">
 	<div class="container">
 		<div class="col-lg-9 col-xs-12 mx-auto text-center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-book-open-line"></i>Blog &amp; Guides</h3>
+			<p class="pill"><i class="ri-book-open-line"></i>Blog &amp; Guides</p>
 			<h1>Practical SEO Advice, Prioritized</h1>
 			<p class="sec-lead mx-auto">Real-world guides on audits, AEO &amp; GEO, semantic SEO, and small business and enterprise SEO &mdash; written the way we do the work.</p>
 		</div>
@@ -61,7 +61,7 @@ require __DIR__ . '/includes/header.php';
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
 				<a class="blog-card fadeInUp" href="<?= site_url($slug) ?>" data-delay="<?= min(0.1 + ($i % 3) * 0.15, 0.4) ?>">
 					<div class="blog-card-media">
-						<img src="<?= e($img) ?>" alt="<?= e($post['title']) ?>" />
+						<img src="<?= e($img) ?>" alt="<?= e($post['title']) ?>" loading="lazy" />
 						<span class="blog-card-tag"><i class="ri-price-tag-3-line"></i><?= e($post['category']) ?></span>
 					</div>
 					<div class="blog-card-body">

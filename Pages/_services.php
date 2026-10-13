@@ -168,11 +168,4 @@ $SERVICES = [
         'tagline'  => 'What actually moves plumbing website conversions, from click-to-call placement to page speed, trust signals, and form length.',
         'purpose'  => 'Guide',
     ],
-    'houston-plumbing-web-design-company' => [
-        'slug'     => 'houston-plumbing-web-design-company',
-        'name'     => 'Houston Plumbing Web Design Company',
-        'icon'     => 'ri-water-flash-line',
-        'tagline'  => 'Fast, mobile-first websites for Houston plumbing companies, with service and location pages built around how customers actually search.',
-        'purpose'  => 'Industry',
-    ],
 ];

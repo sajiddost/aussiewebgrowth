@@ -47,3 +47,5 @@ User-agent: Bingbot
 Allow: /
 
 Sitemap: <?= $sitemap ?>
+
+# Site info for AI readers: <?= absolute_url('llms.txt') ?>

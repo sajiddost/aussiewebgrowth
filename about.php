@@ -113,7 +113,7 @@ require __DIR__ . '/includes/header.php';
 			<span>About</span>
 		</nav>
 		<div class="col-lg-10 col-xs-12 mx-auto text-center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-code-s-slash-line"></i>About AussieWeb Growth</h3>
+			<p class="pill"><i class="ri-code-s-slash-line"></i>About AussieWeb Growth</p>
 			<h1>Websites That <span style="color:var(--primary-color);">Work</span> for Australian Businesses</h1>
 			<p class="sec-lead mx-auto" style="max-width:780px;">Fast, mobile-first, SEO-ready websites built for Australian businesses &mdash; designed to load quickly, look professional, and turn visitors into customers.</p>
 		</div>
@@ -128,13 +128,13 @@ require __DIR__ . '/includes/header.php';
 			<div class="row no-gutters">
 				<div class="col-lg-5">
 					<div class="founder-photo">
-						<img src="<?= site_url('assets/img/website-design-and-development-agency.webp') ?>" alt="AussieWeb Growth - web development services in Australia" loading="lazy">
+						<img src="<?= site_url('assets/img/website-design-and-development-agency.webp') ?>" alt="AussieWeb Growth - web development services in Australia" width="3000" height="3000" loading="lazy">
 						<div class="founder-badge"><i class="ri-code-s-slash-line"></i>Web Development &bull; Australia-wide</div>
 					</div>
 				</div>
 				<div class="col-lg-7">
 					<div class="founder-info">
-						<h3 class="pill"><i class="ri-store-2-line"></i>Who We Are</h3>
+						<p class="pill"><i class="ri-store-2-line"></i>Who We Are</p>
 						<h2><?= e($company['name']) ?></h2>
 						<p class="founder-origin"><i class="ri-map-pin-2-line"></i>Serving small businesses across Australia</p>
 						<p class="founder-snapshot"><?= $company['snapshot'] ?></p>
@@ -161,7 +161,7 @@ require __DIR__ . '/includes/header.php';
 <section class="section pt-0">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-book-open-line"></i>The Company</h3>
+			<p class="pill"><i class="ri-book-open-line"></i>The Company</p>
 			<h2 class="sec-title">What We Do, and <span>How We Work</span></h2>
 			<p class="sec-lead">Who we are, what every website we build has to do, and what happens after it goes live.</p>
 		</div>
@@ -185,7 +185,7 @@ require __DIR__ . '/includes/header.php';
 <section class="section pt-0">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-refresh-line"></i>How We Work</h3>
+			<p class="pill"><i class="ri-refresh-line"></i>How We Work</p>
 			<h2 class="sec-title">A Repeatable Build Process, <span>Not a Black Box</span></h2>
 			<p class="sec-lead">Discovery, Design, Build, Launch &mdash; run as a process with clear milestones. Most website projects don&rsquo;t go wrong from a lack of talent. They go wrong from a lack of structure. We fix that.</p>
 		</div>
@@ -207,7 +207,7 @@ require __DIR__ . '/includes/header.php';
 <section class="section pt-0">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-sparkling-2-line"></i>Design &bull; Speed &bull; Search</h3>
+			<p class="pill"><i class="ri-sparkling-2-line"></i>Design &bull; Speed &bull; Search</p>
 			<h2 class="sec-title">A Website That <span>Looks Good</span> Isn&rsquo;t Enough</h2>
 		</div>
 		<div class="row">
@@ -240,7 +240,7 @@ require __DIR__ . '/includes/header.php';
 				</div>
 				<div class="col-lg-5">
 					<div class="vision-media">
-						<img src="<?= site_url('assets/img/award.png') ?>" alt="AussieWeb Growth - award for honest, results-driven web work" loading="lazy">
+						<img src="<?= site_url('assets/img/award.png') ?>" alt="AussieWeb Growth - award for honest, results-driven web work" width="300" height="300" loading="lazy">
 					</div>
 				</div>
 			</div>

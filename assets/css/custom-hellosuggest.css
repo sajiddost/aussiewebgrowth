@@ -962,7 +962,7 @@ img { max-width: 100%; height: auto; }
 	border: 8px solid #ccc;
 	margin-bottom: 30px;
 }
-.blog-single-cover img { width: 100%; display: block; }
+.blog-single-cover img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
 .blog-single-meta {
 	display: flex;
 	gap: 18px;

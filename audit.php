@@ -545,7 +545,7 @@ require __DIR__ . '/includes/header.php';
 <section class="audit-hero section">
 	<div class="container">
 		<div class="col-lg-10 col-xs-12 mx-auto text-center no-padding">
-			<h3 class="pill"><i class="ri-radar-line"></i>Free SEO Audit Tool</h3>
+			<p class="pill"><i class="ri-radar-line"></i>Free SEO Audit Tool</p>
 			<h1>Free Website SEO Audit Checker</h1>
 			<p class="hero-lead">Enter any URL and we'll run a live audit right now: titles, meta, headings, images, schema, AI-readiness, speed and more - then show you exactly what to fix first.</p>
 
@@ -657,7 +657,7 @@ $remark = $score >= 90 ? 'Looking strong. The items below are polish and edge ca
 <section class="section pt-0">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-search-eye-line"></i>Coverage</h3>
+			<p class="pill"><i class="ri-search-eye-line"></i>Coverage</p>
 			<h2 class="sec-title">What the Free Audit <span>Checks</span></h2>
 			<p class="sec-lead">Twenty-seven checks across the six areas that decide whether search engines and AI systems can find, read, and trust your site.</p>
 		</div>
@@ -712,7 +712,7 @@ $remark = $score >= 90 ? 'Looking strong. The items below are polish and edge ca
 <section class="section pt-0">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-settings-4-line"></i>Process</h3>
+			<p class="pill"><i class="ri-settings-4-line"></i>Process</p>
 			<h2 class="sec-title">How the Free Audit <span>Runs</span></h2>
 		</div>
 		<div class="row">
@@ -764,7 +764,7 @@ $remark = $score >= 90 ? 'Looking strong. The items below are polish and edge ca
 <section class="section pt-0">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-question-answer-line"></i>FAQ</h3>
+			<p class="pill"><i class="ri-question-answer-line"></i>FAQ</p>
 			<h2 class="sec-title">Free Audit <span>FAQ</span></h2>
 		</div>
 		<div class="row">

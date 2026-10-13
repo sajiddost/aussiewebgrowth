@@ -256,7 +256,7 @@ require __DIR__ . '/includes/header.php';
 <section class="page-hero section pb-0">
 	<div class="container">
 		<div class="col-lg-10 col-xs-12 mx-auto text-center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-price-tag-3-line"></i><?= e($post['category']) ?></h3>
+			<p class="pill"><i class="ri-price-tag-3-line"></i><?= e($post['category']) ?></p>
 			<h1><?= e($post['title']) ?></h1>
 			<div class="blog-single-meta justify-content-center">
 				<span><i class="ri-calendar-line"></i><?= date('M j, Y', strtotime($post['date'])) ?></span>
@@ -287,7 +287,7 @@ require __DIR__ . '/includes/header.php';
 					<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 						<a class="blog-card fadeInUp" href="<?= site_url($rel['slug']) ?>" data-delay="<?= min(0.1 + $i * 0.15, 0.4) ?>">
 							<div class="blog-card-media">
-								<img src="<?= site_url($rel['image']) ?>" alt="<?= e($rel['title']) ?>" />
+								<img src="<?= site_url($rel['image']) ?>" alt="<?= e($rel['title']) ?>" loading="lazy" />
 								<span class="blog-card-tag"><i class="ri-price-tag-3-line"></i><?= e($rel['category']) ?></span>
 							</div>
 							<div class="blog-card-body">

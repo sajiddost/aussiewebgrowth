@@ -52,7 +52,7 @@ if (empty($GLOBALS['SERVICES'])) {
 						<ul class="footer-links">
 							<li><a href="<?= site_url('') ?>#home"><i class="ri-arrow-right-s-line"></i>Home</a></li>
 							<li><a href="<?= site_url('') ?>#how"><i class="ri-arrow-right-s-line"></i>How It Works</a></li>
-							<li><a href="<?= site_url('seo-services') ?>"><i class="ri-arrow-right-s-line"></i>Rank on Google</a></li>
+							<li><a href="<?= site_url('seo-services') ?>"><i class="ri-arrow-right-s-line"></i>SEO Services</a></li>
 							<li><a href="<?= site_url('contact') ?>"><i class="ri-arrow-right-s-line"></i>Contact</a></li>
 						</ul>
 					</div>
@@ -80,6 +80,7 @@ if (empty($GLOBALS['SERVICES'])) {
 					<p>Copyright &copy; <?= date('Y') ?> <a href="<?= site_url('') ?>"><?= e(SITE_NAME) ?></a>. All Rights Reserved.</p>
 					<ul class="footer-bottom-links">
 						<li><a href="<?= site_url('sitemap.xml') ?>">Sitemap</a></li>
+						<li><a href="<?= site_url('llms.txt') ?>" rel="llms">LLMs.txt</a></li>
 						<li><a href="<?= site_url('contact') ?>">Contact</a></li>
 						<li><a href="<?= site_url('blog') ?>">Blog</a></li>
 						<li><a href="<?= site_url('') ?>#faqs">FAQ</a></li>

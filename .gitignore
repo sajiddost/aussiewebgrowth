@@ -8,3 +8,6 @@ config.local.php
 # OS / editor cruft
 .DS_Store
 Thumbs.db
+
+# Local SEO audit reports - internal use only, not for the public repo
+aussiewebgrowth.com-audit/

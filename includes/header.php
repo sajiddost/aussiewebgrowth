@@ -48,7 +48,7 @@ $vJs  = @filemtime(__DIR__ . '/../assets/js/hellosuggest.js') ?: date('YmdHis');
 	<!-- Open Graph -->
 	<meta property="og:type" content="<?= e($ogType) ?>">
 	<meta property="og:site_name" content="<?= e(SITE_NAME) ?>">
-	<meta property="og:locale" content="en_US">
+	<meta property="og:locale" content="en_AU">
 	<meta property="og:title" content="<?= e($pageTitle) ?>">
 	<meta property="og:description" content="<?= e($pageDescription) ?>">
 	<meta property="og:url" content="<?= e($canonicalUrl) ?>">
@@ -65,6 +65,9 @@ $vJs  = @filemtime(__DIR__ . '/../assets/js/hellosuggest.js') ?: date('YmdHis');
 	<link rel="apple-touch-icon" href="<?= site_url('assets/img/brands/fav.png') ?>">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<?php if (!empty($preloadImage)): ?>
+	<link rel="preload" as="image" href="<?= e(site_url($preloadImage)) ?>" fetchpriority="high">
+	<?php endif; ?>
 	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="<?= site_url('assets/fonts/remixicon.css') ?>">
 	<link rel="stylesheet" href="<?= site_url('assets/bootstrap/css/bootstrap.min.css') ?>">
@@ -113,7 +116,7 @@ $vJs  = @filemtime(__DIR__ . '/../assets/js/hellosuggest.js') ?: date('YmdHis');
 					<ul>
 <li><a class="menu-link<?= $isHome ? ' active' : '' ?>" href="<?= site_url('') ?>#home">Home</a></li>
 						<li><a class="menu-link" href="<?= site_url('') ?>#how">How It Works</a></li>
-						<li><a class="menu-link<?= $active === 'seo-services' ? ' active' : '' ?>" href="<?= site_url('seo-services') ?>">Rank on Google</a></li>
+						<li><a class="menu-link<?= $active === 'seo-services' ? ' active' : '' ?>" href="<?= site_url('seo-services') ?>">SEO Services</a></li>
 						<li><a class="menu-link<?= $active === 'about' ? ' active' : '' ?>" href="<?= site_url('about') ?>">About</a></li>
 						<li><a class="menu-link<?= $isContact ? ' active' : '' ?>" href="<?= site_url('contact') ?>">Contact</a></li>
 					</ul>

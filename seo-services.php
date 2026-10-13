@@ -2,13 +2,13 @@
 require_once __DIR__ . "/config.php";
 require_once __DIR__ . "/includes/functions.php";
 $pageTitle       = "SEO Services | AussieWeb Growth";
-$pageDescription = "SEO services for Australian businesses — technical SEO audits, on-page SEO, local SEO, link building, and SEO strategy. Drive more traffic, leads and revenue from Google.";$active = "seo-services";
-$pageDescription = 'SEO services for Australian businesses in a typical SEO audit down to the five that actually move rankings, traffic, and revenue — then makes sure they happen. Technical SEO, SEO management, AEO & GEO, and ongoing website support.';
+$pageDescription = "SEO services for Australian businesses — technical SEO audits, on-page SEO, local SEO, link building, and SEO strategy. Drive more traffic, leads and revenue from Google.";
+$canonicalPath   = 'seo-services';
 $active          = 'seo-services';
 
 // FAQ content doubles as FAQPage structured data for answer engines (AEO).
 $faqs = [
-    ['q' => 'How is AussieWeb Growth different from other SEO agencies?', 'a' => 'Most of the difference comes down to prioritization. We\'d rather hand you five fixes that matter than fifty that never get implemented.'],
+    ['q' => 'How is AussieWeb Growth different from other SEO agencies?', 'a' => 'Most of the difference comes down to prioritisation. We\'d rather hand you five fixes that matter than fifty that never get implemented.'],
     ['q' => 'Do you work with small businesses or only larger companies?', 'a' => 'Both. Strategy and pricing scale to the size and complexity of the site, not the other way around.'],
     ['q' => 'What\'s the difference between traditional SEO and AEO or GEO?', 'a' => 'Traditional SEO focuses on ranking in search results. AEO focuses on getting your content selected as a direct answer, in a featured snippet or an AI Overview. GEO focuses on getting cited by generative AI tools like ChatGPT or Perplexity. They overlap with core SEO fundamentals, but the content structure and clarity requirements differ.'],
     ['q' => 'Do I need to choose between semantic SEO and traditional keyword targeting?', 'a' => 'No. Semantic SEO is a more accurate way of thinking about relevance, covering the entities and concepts a topic actually involves instead of chasing exact-match phrases. Keyword research still matters. It just isn\'t the whole picture anymore.'],
@@ -29,7 +29,27 @@ $faqJson = json_encode([
     }, $faqs),
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
-$extraSchema = '<script type="application/ld+json">' . $faqJson . '</script>';
+$serviceJson = json_encode([
+    '@context'    => 'https://schema.org',
+    '@type'       => 'Service',
+    'serviceType' => 'Search Engine Optimization',
+    'provider'    => ['@type' => 'Organization', 'name' => SITE_NAME, 'url' => absolute_url('')],
+    'areaServed'  => ['@type' => 'Country', 'name' => 'Australia'],
+    'url'         => absolute_url('seo-services'),
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+$breadcrumbJson = json_encode([
+    '@context'        => 'https://schema.org',
+    '@type'           => 'BreadcrumbList',
+    'itemListElement' => [
+        ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => absolute_url('')],
+        ['@type' => 'ListItem', 'position' => 2, 'name' => 'SEO Services', 'item' => absolute_url('seo-services')],
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+$extraSchema = '<script type="application/ld+json">' . $faqJson . '</script>'
+    . '<script type="application/ld+json">' . $serviceJson . '</script>'
+    . '<script type="application/ld+json">' . $breadcrumbJson . '</script>';
 
 require __DIR__ . '/includes/header.php';
 ?>
@@ -38,9 +58,9 @@ require __DIR__ . '/includes/header.php';
 <section id="home" class="hero section">
 	<div class="container">
 		<div class="col-lg-10 col-xs-12 mx-auto text-center no-padding fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-sparkling-2-line"></i>Aussie Web Rank</h3>
-			<h1>SEO That Gets <span>Prioritized,</span> Not Just Recommended</h1>
-			<p class="hero-lead">Most SEO reports list every problem they can find. Ours rank the same problems by business impact &mdash; so you know the five fixes that actually move the needle this quarter, and we make sure they happen.</p>
+			<p class="pill"><i class="ri-sparkling-2-line"></i>SEO Services &bull; Australia-wide</p>
+			<h1>SEO Services for <span>Australian Businesses</span></h1>
+			<p class="hero-lead">SEO that gets prioritised, not just recommended. Most SEO reports list every problem they can find. Ours rank the same problems by business impact &mdash; so you know the five fixes that actually move the needle this quarter, and we make sure they happen.</p>
 			<div class="hero-audit">
 				<form method="get" action="<?= site_url('audit') ?>" class="hero-audit-form" novalidate>
 					<div class="hero-audit-input">
@@ -95,7 +115,7 @@ require __DIR__ . '/includes/header.php';
 		<div class="row align-items-end">
 			<div class="col-lg-6 col-md-12">
 				<div class="sec-header left fadeInUp" data-delay="0.1">
-					<h3 class="pill"><i class="ri-focus-3-line"></i>Why Businesses Come to Us</h3>
+					<p class="pill"><i class="ri-focus-3-line"></i>Why Businesses Come to Us</p>
 					<h2 class="sec-title">Most SEO Work Stops at Diagnosis.<br><span>We Turn It Into Action.</span></h2>
 				</div>
 			</div>
@@ -131,7 +151,7 @@ require __DIR__ . '/includes/header.php';
 <section id="how" class="section">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-refresh-line"></i>How We Work</h3>
+			<p class="pill"><i class="ri-refresh-line"></i>How We Work</p>
 			<h2 class="sec-title">A Repeatable Cycle, <span>Not Another Report</span></h2>
 			<p class="sec-lead">Assessment, Priority, Execution, Measurement &mdash; run as a process, repeated on a schedule. Most SEO projects don&rsquo;t fail from a lack of expertise. They fail from a lack of process. We fix that.</p>
 		</div>
@@ -146,7 +166,7 @@ require __DIR__ . '/includes/header.php';
 			<div class="col-lg-3 col-md-6 col-sm-12 mb-5">
 				<div class="step-card fadeInUp" data-delay="0.2">
 					<div class="step-circle"><i class="ri-list-check-2"></i><span class="step-num">2</span></div>
-					<h4>Prioritization</h4>
+					<h4>Prioritisation</h4>
 					<p>Every finding is ranked by expected impact against implementation effort. Fifty flagged problems become the five worth doing this quarter.</p>
 				</div>
 			</div>
@@ -222,7 +242,7 @@ require __DIR__ . '/includes/header.php';
 <section id="services" class="section">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-window-2-line"></i>Core Services</h3>
+			<p class="pill"><i class="ri-window-2-line"></i>Core Services</p>
 			<h2 class="sec-title">One Consultancy, <span>Every Layer of Search</span></h2>
 			<p class="sec-lead">Depending on where a site sits in its lifecycle, that can mean a technical rebuild, a content strategy rework, an authority campaign, ongoing management, or website support &mdash; each scoped to the site, not to a package.</p>
 		</div>
@@ -250,14 +270,14 @@ require __DIR__ . '/includes/header.php';
 			<div class="col-lg-6 col-md-12 fadeInUp" data-delay="0.1">
 				<div class="hs-split-text">
 					<p class="pill"><i class="ri-user-star-line"></i>For Agencies</p>
-					<h2>White Label SEO <span>Fulfillment</span></h2>
+					<h2>White Label SEO <span>Fulfilment</span></h2>
 					<p>If you run a marketing, web design, or advertising agency, clients ask for SEO eventually. Building that capability in-house means hiring specialists, keeping them current on algorithm changes, and absorbing the cost during slow months.</p>
 					<p>White label SEO handles the work behind the scenes, under your name. That includes technical audits, content strategy, link building, and monthly reporting formatted for your clients, not ours. Your client relationship stays yours. We stay invisible unless you decide otherwise.</p>
 					<a href="<?= site_url('contact') ?>" class="btn btn-primary">Discuss Your Client Mix</a>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 fadeInUp" data-delay="0.3">
-				<img src="<?= site_url('assets/img/white-label-SEO-fulfillment.jpg') ?>?v=<?= @filemtime(__DIR__ . '/assets/img/white-label-SEO-fulfillment.jpg') ?: time() ?>" class="img-fluid rounded" alt="White label SEO fulfillment" />
+				<img src="<?= site_url('assets/img/white-label-SEO-fulfillment.jpg') ?>?v=<?= @filemtime(__DIR__ . '/assets/img/white-label-SEO-fulfillment.jpg') ?: time() ?>" class="img-fluid rounded" width="933" height="723" alt="White label SEO fulfilment" />
 			</div>
 		</div>
 	</div>
@@ -268,7 +288,7 @@ require __DIR__ . '/includes/header.php';
 <section class="section">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-user-heart-line"></i>Who This Is For</h3>
+			<p class="pill"><i class="ri-user-heart-line"></i>Who This Is For</p>
 			<h2 class="sec-title">Different Situations. <span>Different Priorities.</span></h2>
 			<p class="sec-lead">None of these situations call for the same tactics, which is one reason we're cautious about agencies that pitch identical packages regardless of client size or type.</p>
 		</div>
@@ -293,7 +313,7 @@ require __DIR__ . '/includes/header.php';
 				<div class="industry-card fadeInUp" data-delay="0.3">
 					<div class="industry-icon"><i class="ri-building-2-line"></i></div>
 					<h4>Agency Owners</h4>
-					<p>If you're an agency owner, the priority isn't strategy at all. It's finding a partner who can deliver consistent, white-labeled work without you having to manage the details.</p>
+					<p>If you're an agency owner, the priority isn't strategy at all. It's finding a partner who can deliver consistent, white-labelled work without you having to manage the details.</p>
 					<a href="<?= site_url('contact') ?>" class="btn btn-primary" style="align-self:center;margin-top:auto;">White label partner <i class="ri-arrow-right-s-line"></i></a>
 				</div>
 			</div>
@@ -310,7 +330,7 @@ require __DIR__ . '/includes/header.php';
 <section id="pricing" class="section">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-price-tag-3-line"></i>Pricing</h3>
+			<p class="pill"><i class="ri-price-tag-3-line"></i>Pricing</p>
 			<h2 class="sec-title">Three Ways to <span>Work With Us</span></h2>
 			<p class="sec-lead">Engagements follow the scope, not a template. These are the three shapes that work usually takes &mdash; every quote starts from a free assessment of your site.</p>
 		</div>
@@ -334,10 +354,10 @@ require __DIR__ . '/includes/header.php';
 					<span class="pricing-badge">Most Popular</span>
 					<h4>Ongoing Management</h4>
 					<div class="pricing-price">$1,500<span class="pricing-cadence">/ month</span></div>
-					<p class="pricing-desc">The repeatable cycle &mdash; assessment, prioritization, execution, measurement &mdash; run every month, reported honestly.</p>
+					<p class="pricing-desc">The repeatable cycle &mdash; assessment, prioritisation, execution, measurement &mdash; run every month, reported honestly.</p>
 					<ul class="pricing-features">
 						<li><i class="ri-check-line"></i>Monthly assessment &amp; honest reporting</li>
-						<li><i class="ri-check-line"></i>Prioritized execution every cycle</li>
+						<li><i class="ri-check-line"></i>Prioritised execution every cycle</li>
 						<li><i class="ri-check-line"></i>Technical, content &amp; authority work</li>
 						<li><i class="ri-check-line"></i>Responses within 24 hours</li>
 						<li><i class="ri-check-line"></i>Optional website support add-on</li>
@@ -349,7 +369,7 @@ require __DIR__ . '/includes/header.php';
 				<div class="pricing-card fadeInUp" data-delay="0.3">
 					<h4>Enterprise &amp; White Label</h4>
 					<div class="pricing-price">Custom<span class="pricing-cadence">scoped</span></div>
-					<p class="pricing-desc">Large sites, multi-market rollouts, and agency fulfillment &mdash; governed, templated, and white-labeled.</p>
+					<p class="pricing-desc">Large sites, multi-market rollouts, and agency fulfilment &mdash; governed, templated, and white-labelled.</p>
 					<ul class="pricing-features">
 						<li><i class="ri-check-line"></i>Governance across thousands of pages</li>
 						<li><i class="ri-check-line"></i>Multi-market &amp; multilingual campaigns</li>
@@ -369,7 +389,7 @@ require __DIR__ . '/includes/header.php';
 <section id="faqs" class="section">
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
-			<h3 class="pill"><i class="ri-question-answer-line"></i>FAQ</h3>
+			<p class="pill"><i class="ri-question-answer-line"></i>FAQ</p>
 			<h2 class="sec-title">Frequently Asked <span>Questions</span></h2>
 		</div>
 		<div class="row">
