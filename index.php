@@ -296,7 +296,7 @@ require __DIR__ . '/includes/header.php';
 
 <!-- ========== FULL-WIDTH IMAGE BANNER ========== -->
 <section class="wd-fullimg-section">
-	<img src="<?= site_url('assets/img/australian-flag.jpg') ?>" alt="Web development services across Australia - Australian flag" width="1000" height="500" loading="lazy">
+	<img src="<?= site_url('assets/img/australian-flag.webp') ?>" alt="Web development services across Australia - Australian flag" width="1000" height="500" loading="lazy">
 </section>
 <!-- ========== END FULL-WIDTH IMAGE BANNER ========== -->
 

@@ -98,6 +98,6 @@ if (empty($GLOBALS['SERVICES'])) {
 		</svg>
 	</div>
 
-	<script src="<?= site_url('assets/js/hellosuggest.js') . '?v=' . ($vJs ?? date('YmdHis')) ?>"></script>
+	<script src="<?= site_url('assets/js/hellosuggest.js') . '?v=' . ($vJs ?? date('YmdHis')) ?>" defer></script>
 </body>
 </html>
