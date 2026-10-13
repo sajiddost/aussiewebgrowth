@@ -235,7 +235,7 @@ require __DIR__ . '/includes/header.php';
 					<h2>Websites for <span>Small Businesses</span></h2>
 					<p>A small business website has one job: help the right people find you, trust you, and contact you. It doesn&rsquo;t need fifty pages or a fancy animation. It needs clear messaging, fast load times, and an obvious next step &mdash; on any device.</p>
 					<p>We build affordable, professional websites for Australian small businesses: cafés and restaurants, trades and contractors, clinics and health practices, professional services, and local retailers. Every build includes the essentials, without paying for features you&rsquo;ll never use.</p>
-					<a href="<?= site_url('affordable-website-design-small-business-australia') ?>" class="btn btn-primary">See Small Business Websites</a>
+					<a href="<?= site_url('contact') ?>" class="btn btn-primary">See Small Business Websites</a>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 fadeInUp order-first order-lg-last mb-4 mb-lg-0" data-delay="0.3">
@@ -284,7 +284,7 @@ require __DIR__ . '/includes/header.php';
 					<div class="industry-icon"><i class="ri-tools-line"></i></div>
 					<h4>Existing Sites Needing Care</h4>
 					<p>If your site is live but neglected &mdash; no updates, no backups, small issues piling up &mdash; the priority is support that keeps it fast and secure.</p>
-					<a href="<?= site_url('ongoing-website-support') ?>" class="industry-link">Get website support <i class="ri-arrow-right-s-line"></i></a>
+					<a href="<?= site_url('contact') ?>" class="industry-link">Get website support <i class="ri-arrow-right-s-line"></i></a>
 				</div>
 			</div>
 		</div>

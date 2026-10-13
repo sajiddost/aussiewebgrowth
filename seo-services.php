@@ -165,7 +165,7 @@ require __DIR__ . '/includes/header.php';
 				</div>
 			</div>
 		</div>
-		<p class="sec-lead text-center fadeInUp" data-delay="0.2">Want the playbook? <a class="process-link" href="<?= site_url('seo-process-measurement-and-honesty') ?>">Read how the four-stage cycle actually plays out</a> &mdash; or ask us to run it on your site.</p>
+		<p class="sec-lead text-center fadeInUp" data-delay="0.2">Want the playbook run on your site? <a class="process-link" href="<?= site_url('contact') ?>">Ask us to walk you through it</a>.</p>
 	</div>
 </section>
 <!-- ========== END PROCESS ========== -->
@@ -234,7 +234,7 @@ require __DIR__ . '/includes/header.php';
 					<div class="industry-icon"><i class="<?= e($svc['icon']) ?>"></i></div>
 					<h4><?= e($svc['name']) ?></h4>
 					<p><?= e($svc['tagline']) ?></p>
-					<a href="<?= site_url($svc['slug']) ?>" class="industry-link">Explore <?= e($svc['name']) ?> <i class="ri-arrow-right-s-line"></i></a>
+					<a href="<?= site_url('contact') ?>" class="industry-link">Ask about <?= e($svc['name']) ?> <i class="ri-arrow-right-s-line"></i></a>
 				</div>
 			</div>
 			<?php $svcIndex++; endforeach; ?>

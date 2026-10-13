@@ -5,7 +5,6 @@
 // =========================================================
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/functions.php';
-require_once __DIR__ . '/Pages/_services.php';
 
 header('Content-Type: application/xml; charset=UTF-8');
 
@@ -17,15 +16,9 @@ $urls = [
     ['loc' => absolute_url('about'),          'lastmod' => $today,          'priority' => '0.8'],
     ['loc' => absolute_url('contact'),        'lastmod' => $today,          'priority' => '0.8'],
     ['loc' => absolute_url('blog'),           'lastmod' => $today,          'priority' => '0.8'],
+    ['loc' => absolute_url('seo-services'),   'lastmod' => $today,          'priority' => '0.8'],
+    ['loc' => absolute_url('audit'),          'lastmod' => $today,          'priority' => '0.7'],
 ];
-
-foreach ($SERVICES as $svc) {
-    $urls[] = [
-        'loc'      => absolute_url($svc['canonical'] ?? $svc['slug']),
-        'lastmod'  => $today,
-        'priority' => '0.8',
-    ];
-}
 
 foreach ($posts as $post) {
     $urls[] = [
