@@ -3,7 +3,7 @@ require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/functions.php';
 
 $pageTitle       = 'Blog';
-$pageDescription = 'Practical, prioritized SEO advice from the AussieWeb Growth team: audits, AEO & GEO, semantic SEO, small business and enterprise SEO.';
+$pageDescription = 'Practical, prioritised SEO advice from the AussieWeb Growth team: audits, AEO & GEO, semantic SEO, small business and enterprise SEO.';
 $active          = 'blog';
 
 $page       = isset($_GET['page']) ? (int)$_GET['page'] : 1;
@@ -33,7 +33,7 @@ require __DIR__ . '/includes/header.php';
 	<div class="container">
 		<div class="col-lg-9 col-xs-12 mx-auto text-center fadeInUp" data-delay="0.1">
 			<p class="pill"><i class="ri-book-open-line"></i>Blog &amp; Guides</p>
-			<h1>Practical SEO Advice, Prioritized</h1>
+			<h1>Practical SEO Advice, Prioritised</h1>
 			<p class="sec-lead mx-auto">Real-world guides on audits, AEO &amp; GEO, semantic SEO, and small business and enterprise SEO &mdash; written the way we do the work.</p>
 		</div>
 	</div>

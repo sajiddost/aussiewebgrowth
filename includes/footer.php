@@ -60,7 +60,7 @@ if (empty($GLOBALS['SERVICES'])) {
 						<h4 class="footer-heading">Get In Touch</h4>
 						<div class="footer-contact-item">
 							<i class="ri-phone-line"></i>
-							<a href="tel:+61480008582">+61 480 008 582</a>
+							<a href="tel:<?= e(CONTACT_PHONE_TEL) ?>"><?= e(CONTACT_PHONE) ?></a>
 						</div>
 						<div class="footer-contact-item">
 							<i class="ri-mail-line"></i>

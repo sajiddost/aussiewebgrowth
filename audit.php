@@ -516,12 +516,12 @@ $canonicalPath   = 'audit';
 
 // ---- SEO content: FAQ accordion + FAQPage structured data ----
 $auditFaqs = [
-    ['q' => 'Is the free SEO audit really free?', 'a' => 'Yes. You just paste a URL and run the check. No signup, no email address, no credit card - the report is generated in a few seconds and you can run it as many times as you like.'],
+    ['q' => 'Is the free SEO audit really free?', 'a' => 'Yes. You just paste a URL and run the check. No signup, no email address, no credit card required - the report is generated in a few seconds and you can run it as many times as you like, on your own site or a competitor\'s. It checks the same technical foundation, on-page, content, AI-visibility, and performance signals covered in a paid audit, just limited to the one page you submit rather than a full-site crawl. If you want the deeper version - root-cause grouping across the whole site, prioritised by impact - that\'s what the paid technical audit adds.'],
     ['q' => 'What does the free audit check?', 'a' => 'It fetches your live page and checks the code-level signals that affect rankings: technical foundation (HTTPS, status codes, canonical tags, noindex, mobile viewport), on-page SEO (title, meta description, headings, content length, internal links), content and media (image alt text, Open Graph, Twitter cards), AI visibility (structured data and direct-answer content), and performance (page weight, load time, redirects, robots.txt and sitemap).'],
     ['q' => 'How accurate is an automated SEO audit?', 'a' => 'The automated scan reads the publicly served HTML the same way a crawler would, so its technical checks are accurate for the page you submit. What it cannot see are things hidden behind logins or analytics - search console data, server logs, or how Google actually crawls and renders your whole site over time. That kind of depth is what a full technical audit covers.'],
     ['q' => 'Why did my website get a low score?', 'a' => 'Low scores usually come from a few high-impact failures - a broken HTTPS setup, no canonical tag, a missing meta description, one oversized page, slow server response, or thin content. The report lists every failure and warning with a plain-English fix, so you can see exactly what is dragging the score down.'],
-    ['q' => 'What is the difference between the free audit and a paid technical audit?', 'a' => 'The free audit is an automated snapshot of one page - useful for a quick health check. A paid technical audit goes much further: it crawls the full site, groups findings by root cause instead of listing every symptom, scores each issue by impact against effort, and hands you a prioritized fix list you can actually execute.'],
-    ['q' => 'How long does the free SEO audit take?', 'a' => 'A few seconds. The tool fetches the URL live, runs the checks, and returns the score and fix list immediately - there is no queue and no email to wait for.'],
+    ['q' => 'What is the difference between the free audit and a paid technical audit?', 'a' => 'The free audit is an automated snapshot of one page - useful for a quick health check. A paid technical audit goes much further: it crawls the full site, groups findings by root cause instead of listing every symptom, scores each issue by impact against effort, and hands you a prioritised fix list you can actually execute.'],
+    ['q' => 'How long does the free SEO audit take?', 'a' => 'A few seconds. The tool fetches the URL live, runs the checks, and returns the score and fix list immediately - there is no queue, no email to wait for, and no account to create first. Because it checks one live page in real time rather than crawling a cached copy, results reflect exactly what is on the page right now, including any changes made moments earlier. Run it again after making a fix to confirm it actually resolved the issue, rather than waiting on a report that might already be out of date by the time it reaches you.'],
 ];
 
 $faqSchema = [
@@ -646,7 +646,7 @@ $remark = $score >= 90 ? 'Looking strong. The items below are polish and edge ca
 
 		<div class="audit-cta">
 			<h3>Want this turned into a ranked roadmap?</h3>
-			<p>Our team expands this automated scan into a prioritized 50-to-5 fix plan - the handful of changes that actually move rankings and revenue.</p>
+			<p>Our team expands this automated scan into a prioritised 50-to-5 fix plan - the handful of changes that actually move rankings and revenue.</p>
 			<a href="<?= site_url('contact') ?>" class="btn btn-white">Get a Free SEO Assessment <i class="ri-arrow-right-line"></i></a>
 		</div>
 	</div>
@@ -741,7 +741,7 @@ $remark = $score >= 90 ? 'Looking strong. The items below are polish and edge ca
 				<div class="step-card fadeInUp" data-delay="0.4">
 					<div class="step-circle"><i class="ri-flag-2-line"></i><span class="step-num">4</span></div>
 					<h4>Decide the next step</h4>
-					<p>Fix the list in-house, or let us prioritize it into a ranked roadmap that targets what actually moves rankings and revenue.</p>
+					<p>Fix the list in-house, or let us prioritise it into a ranked roadmap that targets what actually moves rankings and revenue.</p>
 				</div>
 			</div>
 		</div>
@@ -755,7 +755,7 @@ $remark = $score >= 90 ? 'Looking strong. The items below are polish and edge ca
 			<h2 class="svc-section-title">The free scan is a <span style="color:var(--primary-color);">snapshot, not a strategy</span></h2>
 			<p>The free audit reads the publicly served HTML of one page and flags the code-level issues that hold rankings back &mdash; a fast, honest health check anyone can run. It is deliberately fixed for things like a clear title tag, a single H1, HTTPS, and a sitemap that resolves.</p>
 			<p>What an automated snapshot can&rsquo;t tell you is <em>why</em>. Why Google isn&rsquo;t indexing your pages despite a technically clean score, why a page ranks but nobody clicks it, or where your crawl budget is being wasted across hundreds of URLs. Those answers need a deeper pass over the full site &mdash; the kind covered by a <a class="process-link" href="<?= site_url('seo-services') ?>">technical SEO audit</a>.</p>
-			<p>If the quick check shows your on-page SEO is the weak spot, the fix list above is a workable starting point. If structure and ranking issues run deeper, the same scan feeds directly into a prioritized 50-to-5 plan &mdash; the handful of changes that actually move rankings, rather than a fifty-item dump. That planning is how our <a class="process-link" href="<?= site_url('seo-services') ?>">SEO services</a> engagements typically start, grounded in what the site actually looks like to a crawler.</p>
+			<p>If the quick check shows your on-page SEO is the weak spot, the fix list above is a workable starting point. If structure and ranking issues run deeper, the same scan feeds directly into a prioritised 50-to-5 plan &mdash; the handful of changes that actually move rankings, rather than a fifty-item dump. That planning is how our <a class="process-link" href="<?= site_url('seo-services') ?>">SEO services</a> engagements typically start, grounded in what the site actually looks like to a crawler.</p>
 		</div>
 	</div>
 </section>
@@ -797,7 +797,7 @@ $remark = $score >= 90 ? 'Looking strong. The items below are polish and edge ca
 			<div class="row align-items-center">
 				<div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
 					<h2>Want this turned into a ranked roadmap?</h2>
-					<p>Our team expands this automated scan into a prioritized 50-to-5 fix plan &mdash; the handful of changes that actually move rankings and revenue &mdash; grounded in a full crawl of the site.</p>
+					<p>Our team expands this automated scan into a prioritised 50-to-5 fix plan &mdash; the handful of changes that actually move rankings and revenue &mdash; grounded in a full crawl of the site.</p>
 				</div>
 				<div class="col-lg-5 col-md-12 text-lg-right">
 					<a href="<?= site_url('contact') ?>" class="btn btn-white mb-2">Get a Free SEO Assessment <i class="ri-arrow-right-line"></i></a>

@@ -103,7 +103,7 @@ require __DIR__ . '/includes/header.php';
 			<div class="col-lg-5 col-md-12 mb-4">
 				<div class="contact-info-card fadeInUp" data-delay="0.2">
 					<h2>Let's figure out what actually matters</h2>
-					<p>We review your submission and the basics of your site, then send back a prioritized list of the fixes that matter most and schedule a short call to walk through it. No obligation.</p>
+					<p>We review your submission and the basics of your site, then send back a prioritised list of the fixes that matter most and schedule a short call to walk through it. No obligation.</p>
 					<div class="contact-detail-row">
 						<div class="contact-icon"><i class="ri-mail-line"></i></div>
 						<div class="detail-text">
@@ -122,7 +122,7 @@ require __DIR__ . '/includes/header.php';
 						<div class="contact-icon"><i class="ri-list-check-2"></i></div>
 						<div class="detail-text">
 							<h5>What You Receive</h5>
-							<span>A prioritized list of the five fixes that move rankings and revenue</span>
+							<span>A prioritised list of the five fixes that move rankings and revenue</span>
 						</div>
 					</div>
 					<div class="contact-detail-row">

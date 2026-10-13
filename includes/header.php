@@ -77,12 +77,23 @@ $vJs  = @filemtime(__DIR__ . '/../assets/js/hellosuggest.js') ?: date('YmdHis');
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
-		"@type": "Organization",
+		"@type": ["Organization", "ProfessionalService"],
 		"name": "<?= e(SITE_NAME) ?>",
 		"url": "<?= e(absolute_url('')) ?>",
 		"logo": "<?= e(absolute_url('assets/img/logo.png')) ?>",
 		"description": "<?= e(SITE_TAGLINE) ?>",
 		"email": "<?= e(CONTACT_EMAIL) ?>",
+		"telephone": "<?= e(CONTACT_PHONE_TEL) ?>",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "<?= e(BUSINESS_LOCALITY) ?>",
+			"addressRegion": "<?= e(BUSINESS_REGION) ?>",
+			"addressCountry": "<?= e(BUSINESS_COUNTRY) ?>"
+		},
+		"areaServed": {
+			"@type": "Country",
+			"name": "Australia"
+		},
 		"sameAs": []
 	}
 	</script>

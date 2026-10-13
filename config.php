@@ -15,6 +15,14 @@ const CONTACT_EMAIL = 'info@aussiewebgrowth.com';
 // Email used to receive lead notifications
 const NOTIFY_EMAIL = 'info@aussiewebgrowth.com';
 
+// Public contact phone and general business location (shown on the site
+// and used for Organization/LocalBusiness structured data)
+const CONTACT_PHONE     = '+61 480 008 582';
+const CONTACT_PHONE_TEL = '+61480008582';
+const BUSINESS_LOCALITY = 'Parkwood';
+const BUSINESS_REGION   = 'QLD';
+const BUSINESS_COUNTRY  = 'AU';
+
 // Admin area credentials. Real values live in config.local.php, which is
 // gitignored and must be created on each environment (see
 // config.local.example.php for the format) - they must never be committed.

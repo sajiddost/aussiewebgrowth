@@ -11,7 +11,7 @@ $SERVICES = [
         'slug'     => 'technical-seo-audits',
         'name'     => 'Technical SEO Audits',
         'icon'     => 'ri-file-search-line',
-        'tagline'  => 'Crawl, indexing, sitemap and Core Web Vitals fixes, prioritized by impact.',
+        'tagline'  => 'Crawl, indexing, sitemap and Core Web Vitals fixes, prioritised by impact.',
         'purpose'  => 'Audit',
     ],
     'seo-management' => [

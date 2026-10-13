@@ -9,15 +9,23 @@ require_once __DIR__ . '/includes/functions.php';
 header('Content-Type: application/xml; charset=UTF-8');
 
 $posts = read_blogs();
-$today = date('Y-m-d');
+
+// Real last-modified date per page, derived from its own file - not a
+// fabricated "today" that would be identical on every crawl regardless
+// of whether the page actually changed.
+function page_lastmod(string $file): string
+{
+    $mtime = @filemtime(__DIR__ . '/' . $file);
+    return $mtime ? date('Y-m-d', $mtime) : date('Y-m-d');
+}
 
 $urls = [
-    ['loc' => absolute_url(''),               'lastmod' => $today,          'priority' => '1.0'],
-    ['loc' => absolute_url('about'),          'lastmod' => $today,          'priority' => '0.8'],
-    ['loc' => absolute_url('contact'),        'lastmod' => $today,          'priority' => '0.8'],
-    ['loc' => absolute_url('blog'),           'lastmod' => $today,          'priority' => '0.8'],
-    ['loc' => absolute_url('seo-services'),   'lastmod' => $today,          'priority' => '0.8'],
-    ['loc' => absolute_url('audit'),          'lastmod' => $today,          'priority' => '0.7'],
+    ['loc' => absolute_url(''),               'lastmod' => page_lastmod('index.php'),        'priority' => '1.0'],
+    ['loc' => absolute_url('about'),          'lastmod' => page_lastmod('about.php'),        'priority' => '0.8'],
+    ['loc' => absolute_url('contact'),        'lastmod' => page_lastmod('contact.php'),      'priority' => '0.8'],
+    ['loc' => absolute_url('blog'),           'lastmod' => page_lastmod('blog.php'),         'priority' => '0.8'],
+    ['loc' => absolute_url('seo-services'),   'lastmod' => page_lastmod('seo-services.php'), 'priority' => '0.8'],
+    ['loc' => absolute_url('audit'),          'lastmod' => page_lastmod('audit.php'),        'priority' => '0.7'],
 ];
 
 foreach ($posts as $post) {
