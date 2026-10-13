@@ -2,6 +2,9 @@
 data/leads.jsonl
 data/notifications.log
 
+# Real admin credentials - never commit these; see config.local.example.php
+config.local.php
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db

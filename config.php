@@ -15,9 +15,17 @@ const CONTACT_EMAIL = 'info@aussiewebgrowth.com';
 // Email used to receive lead notifications
 const NOTIFY_EMAIL = 'info@aussiewebgrowth.com';
 
-// Change this before going live. Used to protect the admin area.
-const ADMIN_USERNAME = 'Hello';
-const ADMIN_PASSWORD = 'H1234';
+// Admin area credentials. Real values live in config.local.php, which is
+// gitignored and must be created on each environment (see
+// config.local.example.php for the format) - they must never be committed.
+if (file_exists(__DIR__ . '/config.local.php')) {
+    require_once __DIR__ . '/config.local.php';
+} else {
+    // Fallback only, so a fresh checkout without config.local.php still boots.
+    // This is NOT safe for production - create config.local.php before going live.
+    const ADMIN_USERNAME = 'admin';
+    const ADMIN_PASSWORD = 'change-me-now';
+}
 
 // ---------- File storage (JSONL / JSON, no database) ----------
 const DATA_DIR      = __DIR__ . '/data';

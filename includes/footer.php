@@ -60,7 +60,7 @@ if (empty($GLOBALS['SERVICES'])) {
 						<h4 class="footer-heading">Get In Touch</h4>
 						<div class="footer-contact-item">
 							<i class="ri-phone-line"></i>
-							<a href="tel:+61212345678">+61 2 1234 5678</a>
+							<a href="tel:+61480008582">+61 480 008 582</a>
 						</div>
 						<div class="footer-contact-item">
 							<i class="ri-mail-line"></i>
@@ -68,7 +68,7 @@ if (empty($GLOBALS['SERVICES'])) {
 						</div>
 						<div class="footer-contact-item">
 							<i class="ri-map-pin-2-line"></i>
-							<span>Level 1, 123 Example Street, Sydney NSW 2000, Australia</span>
+							<span>Parkwood, Gold Coast QLD, Australia</span>
 						</div>
 					</div>
 				</div>
@@ -80,7 +80,6 @@ if (empty($GLOBALS['SERVICES'])) {
 					<p>Copyright &copy; <?= date('Y') ?> <a href="<?= site_url('') ?>"><?= e(SITE_NAME) ?></a>. All Rights Reserved.</p>
 					<ul class="footer-bottom-links">
 						<li><a href="<?= site_url('sitemap.xml') ?>">Sitemap</a></li>
-						<li><a href="<?= site_url('llms.txt') ?>" rel="llms">LLMs.txt</a></li>
 						<li><a href="<?= site_url('contact') ?>">Contact</a></li>
 						<li><a href="<?= site_url('blog') ?>">Blog</a></li>
 						<li><a href="<?= site_url('') ?>#faqs">FAQ</a></li>
