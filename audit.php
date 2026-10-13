@@ -26,7 +26,7 @@ function audit_fetch_website(string $url): array
             CURLOPT_MAXREDIRS      => 8,
             CURLOPT_TIMEOUT        => 25,
             CURLOPT_CONNECTTIMEOUT => 12,
-            CURLOPT_USERAGENT      => 'Mozilla/5.0 (compatible; HelloSuggestSEOAudit/1.0; +https://hellosuggest.com/audit)',
+            CURLOPT_USERAGENT      => 'Mozilla/5.0 (compatible; AussieWebGrowthSEOAudit/1.0; +https://aussiewebgrowth.com/audit)',
             CURLOPT_HTTPHEADER     => ['Accept-Language: en-US,en;q=0.9', 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'],
             CURLOPT_SSL_VERIFYPEER => true,
             CURLOPT_SSL_VERIFYHOST => 2,
@@ -64,7 +64,7 @@ function audit_fetch_website(string $url): array
         'http' => [
             'timeout'       => 25,
             'ignore_errors' => true,
-            'user_agent'    => 'HelloSuggestSEOAudit/1.0',
+            'user_agent'    => 'AussieWebGrowthSEOAudit/1.0',
             'header'        => "Accept-Language: en-US,en;q=0.9\r\n",
         ],
     ]);
@@ -94,7 +94,7 @@ function audit_url_exists(string $url): ?bool
         CURLOPT_MAXREDIRS      => 4,
         CURLOPT_TIMEOUT        => 12,
         CURLOPT_CONNECTTIMEOUT => 8,
-        CURLOPT_USERAGENT      => 'HelloSuggestSEOAudit/1.0',
+        CURLOPT_USERAGENT      => 'AussieWebGrowthSEOAudit/1.0',
     ]);
     curl_exec($ch);
     $code = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);

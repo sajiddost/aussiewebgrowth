@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
 <body class="admin-body">
 	<div class="admin-wrap">
 		<div class="admin-card text-center">
-			<div class="brand mb-3" style="font-size:30px;">Hello<span>Suggest</span></div>
+			<div class="brand mb-3" style="font-size:30px;">AussieWeb <span>Growth</span></div>
 			<h1 class="mt-2 mb-2" style="font-size:26px;">Admin Login</h1>
 			<p class="mb-4" style="color:var(--subtitle);">Sign in to view contact form leads.</p>
 

@@ -10,7 +10,7 @@ $canonicalPath   = 'contact';
 $contactSchema = [
     '@context' => 'https://schema.org',
     '@type'    => 'ContactPage',
-    'name'     => 'Contact HelloSuggest',
+    'name'     => 'Contact AussieWeb Growth',
     'url'      => absolute_url('contact'),
     'about'    => SITE_TAGLINE,
 ];

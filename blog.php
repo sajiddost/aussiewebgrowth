@@ -3,7 +3,7 @@ require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/functions.php';
 
 $pageTitle       = 'Blog';
-$pageDescription = 'Practical, prioritized SEO advice from the HelloSuggest team: audits, AEO & GEO, semantic SEO, small business and enterprise SEO.';
+$pageDescription = 'Practical, prioritized SEO advice from the AussieWeb Growth team: audits, AEO & GEO, semantic SEO, small business and enterprise SEO.';
 $active          = 'blog';
 
 $page       = isset($_GET['page']) ? (int)$_GET['page'] : 1;
