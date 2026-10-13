@@ -5,7 +5,7 @@
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/functions.php';
 
-$pageTitle       = 'About Us | AussieWeb Growth';
+$pageTitle       = 'About Us';
 $pageDescription = 'AussieWeb Growth builds fast, mobile-first, SEO-ready websites for Australian small businesses \u2014 a repeatable process, fixed quotes up front, and support after launch.';
 $active          = 'about';
 $canonicalPath   = 'about';

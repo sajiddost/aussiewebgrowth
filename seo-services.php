@@ -1,7 +1,7 @@
 ﻿<?php
 require_once __DIR__ . "/config.php";
 require_once __DIR__ . "/includes/functions.php";
-$pageTitle       = "SEO Services | AussieWeb Growth";
+$pageTitle       = "SEO Services";
 $pageDescription = "SEO services for Australian businesses — technical SEO audits, on-page SEO, local SEO, link building, and SEO strategy. Drive more traffic, leads and revenue from Google.";
 $canonicalPath   = 'seo-services';
 $active          = 'seo-services';
