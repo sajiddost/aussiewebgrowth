@@ -37,7 +37,7 @@ if (empty($GLOBALS['SERVICES'])) {
 				<div class="row">
 					<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 						<div class="footer-about">
-							<h3 class="footer-logo">AussieWeb <span>Growth</span></h3>
+							<h3 class="footer-logo"><img src="<?= site_url('assets/img/footer-logo.png') ?>" alt="<?= e(SITE_NAME) ?>" width="257" height="64"></h3>
 							<p class="footer-desc">An SEO management company that ranks the fifty problems in a typical audit down to the five that actually move rankings and revenue.</p>
 							<div class="footer-social">
 								<a href="https://www.facebook.com/hellosuggest" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>

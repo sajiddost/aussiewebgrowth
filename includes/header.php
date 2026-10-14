@@ -116,7 +116,7 @@ $vJs  = @filemtime(__DIR__ . '/../assets/js/hellosuggest.js') ?: date('YmdHis');
 		<div class="container">
 			<div class="header-inner">
 				<a href="<?= site_url('') ?>" class="brand" aria-label="<?= e(SITE_NAME) ?>">
-					AussieWeb <span>Growth</span>
+					<img src="<?= site_url('assets/img/logo.png') ?>" alt="<?= e(SITE_NAME) ?>" width="257" height="64">
 				</a>
 
 				<div class="header-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
