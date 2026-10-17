@@ -111,6 +111,34 @@ $vJs  = @filemtime(__DIR__ . '/../assets/js/aussiewebgrowth.js') ?: date('YmdHis
 </head>
 <body<?= $active === 'seo-services' ? ' class="seo-services-page"' : '' ?>>
 
+	<!-- Start of HubSpot Embed Code -->
+	<script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/247717771.js"></script>
+	<!-- End of HubSpot Embed Code -->
+
+	<!-- TEMP: HubSpot live chat diagnostic — remove once verified -->
+	<script type="text/javascript">
+	(function () {
+		var tag = '[HubSpot chat check]';
+		if (window.HubSpotConversations) {
+			console.log(tag, 'API already available:', window.HubSpotConversations);
+		} else {
+			window.hsConversationsOnReady = window.hsConversationsOnReady || [];
+			window.hsConversationsOnReady.push(function () {
+				console.log(tag, 'Loaded — HubSpotConversations API ready:', window.HubSpotConversations);
+				console.log(tag, 'Widget state:', window.HubSpotConversations && window.HubSpotConversations.widget.status());
+			});
+		}
+		setTimeout(function () {
+			if (window.HubSpotConversations) { return; }
+			console.warn(tag, 'HubSpotConversations still unavailable after 10s. ' +
+				'No chatflow/widget provisioned for this portal, or the loader was blocked.');
+			console.log(tag, '_hsq present:', !!window._hsq, '| hs-script-loader present:',
+				!!document.getElementById('hs-script-loader'));
+		}, 10000);
+	})();
+	</script>
+	<!-- END TEMP HubSpot live chat diagnostic -->
+
 	<!-- ========== Header / Nav ========== -->
 	<header id="header" class="site-header">
 		<div class="container">
