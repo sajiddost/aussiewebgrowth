@@ -347,28 +347,6 @@ require __DIR__ . '/includes/header.php';
 					'featured' => false,
 					'badge'    => '',
 				],
-				[
-					'name'     => 'Business Website',
-					'icon'     => 'ri-building-2-line',
-					'was'      => '$5,000',
-					'now'      => '$1,999',
-					'desc'     => 'Serious businesses &amp; enterprises.',
-					'feats'    => ['15&ndash;20 pages', 'Custom WordPress development', 'Online booking / payments', 'Unlimited revisions', 'Explainer video included', 'Advanced SEO setup', 'Dedicated project manager'],
-					'cta'      => 'Get Started',
-					'featured' => false,
-					'badge'    => '',
-				],
-				[
-					'name'     => 'Advanced Custom Solutions',
-					'icon'     => 'ri-settings-3-line',
-					'was'      => '$10,000',
-					'now'      => '$3,999',
-					'desc'     => 'Custom systems &amp; enterprise solutions.',
-					'feats'    => ['Custom CRM systems', 'Learning management systems (LMS)', 'Automation &amp; integrations', 'Enterprise-level security', 'Fully scalable solutions'],
-					'cta'      => 'Let&rsquo;s Discuss Your Idea',
-					'featured' => false,
-					'badge'    => '',
-				],
 			];
 			foreach ($plans as $i => $plan): ?>
 			<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
