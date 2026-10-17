@@ -92,5 +92,10 @@ if (empty($GLOBALS['SERVICES'])) {
 	<!-- ========== End Footer ========== -->
 
 	<script src="<?= site_url('assets/js/aussiewebgrowth.js') . '?v=' . ($vJs ?? date('YmdHis')) ?>" defer></script>
+	
+	<!-- Start of HubSpot Embed Code -->
+	<script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/247717771.js"></script>
+	<!-- End of HubSpot Embed Code -->
+
 </body>
 </html>
