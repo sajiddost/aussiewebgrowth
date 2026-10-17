@@ -87,30 +87,6 @@
         onScrollHeader();
     }
 
-    // ---- scroll to top + ring progress ----
-    var scrollTop = document.getElementById('scroll-to-top');
-    if (scrollTop) {
-        var ring = scrollTop.querySelector('svg path');
-        var CIRC = 2 * Math.PI * 49; // r=49
-        if (ring) {
-            ring.style.strokeDasharray = CIRC;
-            ring.style.strokeDashoffset = '0';
-        }
-        var onScrollTop = function () {
-            var st = window.scrollY || document.documentElement.scrollTop;
-            var wh = window.innerHeight;
-            var dh = document.body.scrollHeight - wh;
-            var pct = dh > 0 ? (st / dh) * 100 : 100;
-            if (ring) { ring.style.strokeDashoffset = String(CIRC - (pct * CIRC) / 100); }
-            scrollTop.style.display = st > 350 ? 'flex' : 'none';
-        };
-        window.addEventListener('scroll', onScrollTop, { passive: true });
-        onScrollTop();
-        scrollTop.addEventListener('click', function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    }
-
     // ---- reveal on scroll (fadeInUp) ----
     var reveals = document.querySelectorAll('.fadeInUp');
     if ('IntersectionObserver' in window && reveals.length) {

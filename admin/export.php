@@ -27,7 +27,7 @@ foreach ($leads as $lead) {
 $handle = fopen('php://output', 'w');
 
 header('Content-Type: text/csv; charset=UTF-8');
-header('Content-Disposition: attachment; filename="hellosuggest-leads-' . date('Y-m-d') . '.csv"');
+header('Content-Disposition: attachment; filename="aussiewebgrowth-leads-' . date('Y-m-d') . '.csv"');
 
 foreach ($rows as $row) {
     fputcsv($handle, $row);

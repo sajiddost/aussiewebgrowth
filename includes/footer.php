@@ -40,9 +40,9 @@ if (empty($GLOBALS['SERVICES'])) {
 							<h3 class="footer-logo"><img src="<?= site_url('assets/img/footer-logo.png') ?>" alt="<?= e(SITE_NAME) ?>" width="257" height="64"></h3>
 							<p class="footer-desc">An SEO management company that ranks the fifty problems in a typical audit down to the five that actually move rankings and revenue.</p>
 							<div class="footer-social">
-								<a href="https://www.facebook.com/hellosuggest" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-								<a href="https://www.instagram.com/hellosuggest" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
-								<a href="https://x.com/hellosuggest" aria-label="Twitter / X"><i class="ri-twitter-x-fill"></i></a>
+								<a href="https://www.facebook.com/aussiewebgrowth" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+								<a href="https://www.instagram.com/aussiewebgrowth" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+								<a href="https://x.com/aussiewebgrowth" aria-label="Twitter / X"><i class="ri-twitter-x-fill"></i></a>
 								<a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
 							</div>
 						</div>
@@ -91,13 +91,43 @@ if (empty($GLOBALS['SERVICES'])) {
 	</footer>
 	<!-- ========== End Footer ========== -->
 
-	<div id="scroll-to-top" class="scroll-top" aria-label="Scroll to top">
-		<i class="ri-arrow-up-s-line"></i>
-		<svg width="100%" height="100%" viewBox="-1 -1 102 102" stroke="#E4022B" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-		</svg>
+	<!-- ========== Live chat widget ========== -->
+	<div id="awg-chat" class="awg-chat" data-api="<?= site_url('chat-api') ?>">
+		<button type="button" class="awg-chat-launch" aria-label="Open live chat">
+			<i class="ri-chat-3-line"></i>
+			<span class="awg-chat-badge" hidden>1</span>
+		</button>
+		<div class="awg-chat-panel" hidden role="dialog" aria-label="Live chat">
+			<div class="awg-chat-head">
+				<div class="awg-chat-head-text">
+					<strong>Live Chat</strong>
+					<span class="awg-status" id="awg-status"><span class="awg-status-dot"></span><span class="awg-status-text">We usually reply within a few minutes</span></span>
+				</div>
+				<button type="button" class="awg-chat-close" aria-label="Close chat"><i class="ri-close-line"></i></button>
+			</div>
+			<div class="awg-chat-prechat">
+				<p>Hi! Tell us a little about what you need and we'll take it from there.</p>
+				<input type="text" class="awg-chat-name" placeholder="Your name (optional)" maxlength="80" autocomplete="name">
+				<input type="email" class="awg-chat-email" placeholder="Email (optional)" maxlength="120" autocomplete="email">
+				<button type="button" class="btn btn-primary awg-chat-start">Start Chat <i class="ri-send-plane-2-line"></i></button>
+			</div>
+			<div class="awg-chat-thread" hidden>
+				<div class="awg-chat-messages" aria-live="polite"></div>
+				<div class="awg-typing" id="awg-typing" hidden>
+					<span class="awg-typing-dots"><i></i><i></i><i></i></span>
+					<span class="awg-typing-label">We're typing&hellip;</span>
+				</div>
+				<form class="awg-chat-form" autocomplete="off">
+					<input type="text" class="awg-chat-input" placeholder="Type your message..." maxlength="1000" aria-label="Your message">
+					<button type="submit" class="awg-chat-send" aria-label="Send message"><i class="ri-send-plane-2-line"></i></button>
+				</form>
+			</div>
+		</div>
 	</div>
+	<!-- ========== End live chat widget ========== -->
 
-	<script src="<?= site_url('assets/js/hellosuggest.js') . '?v=' . ($vJs ?? date('YmdHis')) ?>" defer></script>
+	<script src="<?= site_url('assets/js/aussiewebgrowth.js') . '?v=' . ($vJs ?? date('YmdHis')) ?>" defer></script>
+	<?php $vChat = @filemtime(__DIR__ . '/../assets/js/chat.js') ?: date('YmdHis'); ?>
+	<script src="<?= site_url('assets/js/chat.js') . '?v=' . $vChat ?>" defer></script>
 </body>
 </html>

@@ -63,7 +63,7 @@ foreach (array_reverse($leads) as $i => $lead) {
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="<?= site_url('assets/fonts/remixicon.css') ?>">
-	<link rel="stylesheet" href="<?= site_url('assets/css/custom-hellosuggest.css') ?>">
+	<link rel="stylesheet" href="<?= site_url('assets/css/custom-aussiewebgrowth.css') ?>">
 		<style>
 		body.admin-body { padding-top: 0; }
 
@@ -148,6 +148,7 @@ foreach (array_reverse($leads) as $i => $lead) {
 					<span class="admin-top-label">Leads <span class="admin-count">(<?= $total ?>)</span> <?php if ($newCount > 0): ?><span class="lead-status is-new"><i class="ri-time-line"></i><?= $newCount ?> new</span><?php endif; ?></span>
 				</div>
 				<div class="admin-actions">
+					<a class="btn-outline" href="<?= site_url('admin/chat') ?>"><i class="ri-chat-3-line"></i> Live Chat</a>
 					<a class="btn-outline" href="<?= site_url('') ?>"><i class="ri-global-line"></i> View Site</a>
 					<a class="btn-outline" href="<?= site_url('admin/export') ?>"><i class="ri-download-2-line"></i> Export CSV</a>
 					<a class="btn-outline" href="<?= site_url('admin/logout') ?>" onclick="return confirm('Log out of the admin area?');"><i class="ri-logout-box-r-line"></i> Logout</a>

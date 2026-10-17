@@ -40,6 +40,7 @@ if (file_exists(__DIR__ . '/config.local.php')) {
 const DATA_DIR      = __DIR__ . '/data';
 const LEADS_FILE    = DATA_DIR . '/leads.jsonl';
 const BLOGS_FILE    = DATA_DIR . '/blogs.json';
+const CHATS_FILE    = DATA_DIR . '/chats.json';
 
 // Blog pagination
 const BLOGS_PER_PAGE = 6;
@@ -47,7 +48,7 @@ const BLOGS_PER_PAGE = 6;
 // ---------- Path helpers ----------
 // Base URL is the app's own location relative to the web root. Deriving it
 // from DOCUMENT_ROOT (not each script's own dirname) keeps URLs identical
-// whether the page is at /hellosuggest/index.php or /hellosuggest/admin/leads.php
+// whether the page is at /aussiewebgrowth/index.php or /aussiewebgrowth/admin/leads.php
 $docRoot = str_replace('\\', '/', rtrim($_SERVER['DOCUMENT_ROOT'] ?? '', '/\\'));
 $appDir  = str_replace('\\', '/', __DIR__);
 $baseUrl = '';

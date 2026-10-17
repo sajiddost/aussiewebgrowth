@@ -305,57 +305,87 @@ require __DIR__ . '/includes/header.php';
 	<div class="container">
 		<div class="sec-header center fadeInUp" data-delay="0.1">
 			<p class="pill"><i class="ri-price-tag-3-line"></i>Pricing</p>
-			<h2 class="sec-title">Three Ways to <span>Work With Us</span></h2>
-			<p class="sec-lead">Projects follow the scope, not a template. These are the three shapes work usually takes &mdash; every quote starts from a free discussion about what you need.</p>
+			<h2 class="sec-title">Customisable &amp; <span>Affordable Plans</span></h2>
+			<p class="sec-lead">Website plans built for every stage of business &mdash; from a first website to enterprise-grade custom builds. Fixed, itemised pricing with no surprises.</p>
 		</div>
-		<div class="row">
+		<div class="text-center mb-5 fadeInUp" data-delay="0.15">
+			<span class="pricing-offer"><i class="ri-flashlight-line"></i>Limited Time Offer &mdash; 50% Exclusive Discount</span>
+		</div>
+		<div class="row justify-content-center">
+			<?php
+			$plans = [
+				[
+					'name'     => 'Startup Website',
+					'icon'     => 'ri-rocket-2-line',
+					'was'      => '$500',
+					'now'      => '$250',
+					'desc'     => 'Perfect for new businesses.',
+					'feats'    => ['Up to 5 pages', 'Mobile friendly design', 'Stock images included', 'Contact form', 'Social media integration', 'Delivery: 48&ndash;72 hours'],
+					'cta'      => 'Get Started',
+					'featured' => false,
+					'badge'    => '',
+				],
+				[
+					'name'     => 'Pro Website',
+					'icon'     => 'ri-star-line',
+					'was'      => '$1,200',
+					'now'      => '$600',
+					'desc'     => 'For growing brands.',
+					'feats'    => ['Up to 10 pages', 'CMS / admin panel', 'Mobile responsive', 'Custom banners &amp; slider', 'SEO friendly structure', 'Social media setup', 'Delivery: 3&ndash;5 days'],
+					'cta'      => 'Get Started',
+					'featured' => true,
+					'badge'    => 'Most Popular',
+				],
+				[
+					'name'     => 'Elite Website',
+					'icon'     => 'ri-vip-crown-line',
+					'was'      => '$2,000',
+					'now'      => '$1,000',
+					'desc'     => 'High-end &amp; conversion focused.',
+					'feats'    => ['Up to 15 pages', 'Custom UI / UX design', 'Mobile responsive', 'Online payments (optional)', 'Lead capture forms', 'Newsletter integration', 'SEO ready website'],
+					'cta'      => 'Get Started',
+					'featured' => false,
+					'badge'    => '',
+				],
+				[
+					'name'     => 'Business Website',
+					'icon'     => 'ri-building-2-line',
+					'was'      => '$5,000',
+					'now'      => '$2,500',
+					'desc'     => 'Serious businesses &amp; enterprises.',
+					'feats'    => ['15&ndash;20 pages', 'Custom WordPress development', 'Online booking / payments', 'Unlimited revisions', 'Explainer video included', 'Advanced SEO setup', 'Dedicated project manager'],
+					'cta'      => 'Get Started',
+					'featured' => false,
+					'badge'    => '',
+				],
+				[
+					'name'     => 'Advanced Custom Solutions',
+					'icon'     => 'ri-settings-3-line',
+					'was'      => '$10,000',
+					'now'      => '$5,000',
+					'desc'     => 'Custom systems &amp; enterprise solutions.',
+					'feats'    => ['Custom CRM systems', 'Learning management systems (LMS)', 'Automation &amp; integrations', 'Enterprise-level security', 'Fully scalable solutions'],
+					'cta'      => 'Let&rsquo;s Discuss Your Idea',
+					'featured' => false,
+					'badge'    => '',
+				],
+			];
+			foreach ($plans as $i => $plan): ?>
 			<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-				<div class="pricing-card fadeInUp" data-delay="0.1">
-					<h4>Small Business Website</h4>
-					<div class="pricing-price">$699<span class="pricing-cadence">from &middot; one-off</span></div>
-					<p class="pricing-desc">A professional, mobile-first website for your small business &mdash; the right pages, clear messaging, and SEO foundations, at a fixed price.</p>
+				<div class="pricing-card<?= $plan['featured'] ? ' is-featured' : '' ?> fadeInUp" data-delay="<?= 0.1 + $i * 0.1 ?>">
+					<?php if ($plan['badge'] !== ''): ?><span class="pricing-badge"><?= e($plan['badge']) ?></span><?php endif; ?>
+					<h4><i class="<?= $plan['icon'] ?>"></i><?= e($plan['name']) ?></h4>
+					<div class="pricing-price"><span class="price-was"><?= $plan['was'] ?></span><?= $plan['now'] ?><span class="pricing-cadence">one-off</span></div>
+					<p class="pricing-desc"><?= $plan['desc'] ?></p>
 					<ul class="pricing-features">
-						<li><i class="ri-check-line"></i>Up to 5 pages, custom design</li>
-						<li><i class="ri-check-line"></i>Mobile-first, fast-loading build</li>
-						<li><i class="ri-check-line"></i>Contact form &amp; Google Maps setup</li>
-						<li><i class="ri-check-line"></i>SEO foundations &amp; schema included</li>
-						<li><i class="ri-check-line"></i>Launch training &amp; handover</li>
+						<?php foreach ($plan['feats'] as $f): ?>
+						<li><i class="ri-check-line"></i><?= $f ?></li>
+						<?php endforeach; ?>
 					</ul>
-					<a href="<?= site_url('contact') ?>" class="btn btn-dark">Get Your Quote</a>
+					<a href="<?= site_url('contact') ?>" class="btn <?= $plan['featured'] ? 'btn-primary' : 'btn-dark' ?>"><?= $plan['cta'] ?></a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-				<div class="pricing-card is-featured fadeInUp" data-delay="0.2">
-					<span class="pricing-badge">Most Popular</span>
-					<h4>Website + Support</h4>
-					<div class="pricing-price">$1,299<span class="pricing-cadence">from &middot; one-off</span></div>
-					<p class="pricing-desc">A new build or redesign, plus ongoing support to keep it updated, secure, and improving after launch.</p>
-					<ul class="pricing-features">
-						<li><i class="ri-check-line"></i>Everything in the small business build</li>
-						<li><i class="ri-check-line"></i>Up to 10 pages or a full redesign</li>
-						<li><i class="ri-check-line"></i>Monthly updates, backups &amp; security</li>
-						<li><i class="ri-check-line"></i>Small changes handled as they come up</li>
-						<li><i class="ri-check-line"></i>Priority responses within 24 hours</li>
-						<li><i class="ri-check-line"></i>Optional SEO add-on for growth</li>
-					</ul>
-					<a href="<?= site_url('contact') ?>" class="btn btn-primary">Discuss Your Project</a>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-				<div class="pricing-card fadeInUp" data-delay="0.3">
-					<h4>Ecommerce &amp; Custom Builds</h4>
-					<div class="pricing-price">$1,999<span class="pricing-cadence">from &middot; one-off</span></div>
-					<p class="pricing-desc">Online stores, booking systems, integrations, and larger multi-page builds &mdash; planned, staged, and quoted to the work.</p>
-					<ul class="pricing-features">
-						<li><i class="ri-check-line"></i>Store setup with secure payments</li>
-						<li><i class="ri-check-line"></i>Product, shipping &amp; tax configuration</li>
-						<li><i class="ri-check-line"></i>Up to 50 products loaded for you</li>
-						<li><i class="ri-check-line"></i>Third-party integrations as needed</li>
-						<li><i class="ri-check-line"></i>Staged delivery with milestone reviews</li>
-					</ul>
-					<a href="<?= site_url('contact') ?>" class="btn btn-dark">Discuss Scope</a>
-				</div>
-			</div>
+			<?php endforeach; ?>
 		</div>
 		<p class="text-center pricing-note fadeInUp" data-delay="0.2">Every quote is itemised and fixed before work begins. Start with a <a href="<?= site_url('contact') ?>">free website quote</a> and we&rsquo;ll outline the scope your project actually needs.</p>
 	</div>

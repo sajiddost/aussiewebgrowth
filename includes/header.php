@@ -25,8 +25,8 @@ $isContact = $active === 'contact';
 $canonicalUrl = absolute_url($canonicalPath);
 
 // Asset versioning: bust browser + CDN (Cloudflare) caches when a file changes.
-$vCss = @filemtime(__DIR__ . '/../assets/css/custom-hellosuggest.css') ?: date('YmdHis');
-$vJs  = @filemtime(__DIR__ . '/../assets/js/hellosuggest.js') ?: date('YmdHis');
+$vCss = @filemtime(__DIR__ . '/../assets/css/custom-aussiewebgrowth.css') ?: date('YmdHis');
+$vJs  = @filemtime(__DIR__ . '/../assets/js/aussiewebgrowth.js') ?: date('YmdHis');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -71,7 +71,7 @@ $vJs  = @filemtime(__DIR__ . '/../assets/js/hellosuggest.js') ?: date('YmdHis');
 	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="<?= site_url('assets/fonts/remixicon.css') ?>">
 	<link rel="stylesheet" href="<?= site_url('assets/bootstrap/css/bootstrap.min.css') ?>">
-	<link rel="stylesheet" href="<?= site_url('assets/css/custom-hellosuggest.css') . '?v=' . $vCss ?>">
+	<link rel="stylesheet" href="<?= site_url('assets/css/custom-aussiewebgrowth.css') . '?v=' . $vCss ?>">
 
 	<!-- Structured data (Organization + WebSite) -->
 	<script type="application/ld+json">
