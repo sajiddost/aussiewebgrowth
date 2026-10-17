@@ -148,7 +148,6 @@ foreach (array_reverse($leads) as $i => $lead) {
 					<span class="admin-top-label">Leads <span class="admin-count">(<?= $total ?>)</span> <?php if ($newCount > 0): ?><span class="lead-status is-new"><i class="ri-time-line"></i><?= $newCount ?> new</span><?php endif; ?></span>
 				</div>
 				<div class="admin-actions">
-					<a class="btn-outline" href="<?= site_url('admin/chat') ?>"><i class="ri-chat-3-line"></i> Live Chat</a>
 					<a class="btn-outline" href="<?= site_url('') ?>"><i class="ri-global-line"></i> View Site</a>
 					<a class="btn-outline" href="<?= site_url('admin/export') ?>"><i class="ri-download-2-line"></i> Export CSV</a>
 					<a class="btn-outline" href="<?= site_url('admin/logout') ?>" onclick="return confirm('Log out of the admin area?');"><i class="ri-logout-box-r-line"></i> Logout</a>

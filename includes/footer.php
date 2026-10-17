@@ -91,44 +91,7 @@ if (empty($GLOBALS['SERVICES'])) {
 	</footer>
 	<!-- ========== End Footer ========== -->
 
-	<!-- ========== Live chat widget ========== -->
-	<div id="awg-chat" class="awg-chat" data-api="<?= site_url('chat-api') ?>">
-		<button type="button" class="awg-chat-launch" aria-label="Open live chat">
-			<i class="ri-chat-3-line"></i>
-			<span class="awg-chat-badge" hidden>1</span>
-		</button>
-		<div class="awg-chat-panel" hidden role="dialog" aria-label="Live chat">
-			<div class="awg-chat-head">
-				<div class="awg-chat-head-text">
-					<strong>Live Chat</strong>
-					<span class="awg-status" id="awg-status"><span class="awg-status-dot"></span><span class="awg-status-text">We usually reply within a few minutes</span></span>
-				</div>
-				<button type="button" class="awg-chat-close" aria-label="Close chat"><i class="ri-close-line"></i></button>
-			</div>
-			<div class="awg-chat-prechat">
-				<p>Hi! Tell us a little about what you need and we'll take it from there.</p>
-				<input type="text" class="awg-chat-name" placeholder="Your name (optional)" maxlength="80" autocomplete="name">
-				<input type="email" class="awg-chat-email" placeholder="Email (optional)" maxlength="120" autocomplete="email">
-				<button type="button" class="btn btn-primary awg-chat-start">Start Chat <i class="ri-send-plane-2-line"></i></button>
-			</div>
-			<div class="awg-chat-thread" hidden>
-				<div class="awg-chat-messages" aria-live="polite"></div>
-				<div class="awg-typing" id="awg-typing" hidden>
-					<span class="awg-typing-dots"><i></i><i></i><i></i></span>
-					<span class="awg-typing-label">We're typing&hellip;</span>
-				</div>
-				<form class="awg-chat-form" autocomplete="off">
-					<input type="text" class="awg-chat-input" placeholder="Type your message..." maxlength="1000" aria-label="Your message">
-					<button type="submit" class="awg-chat-send" aria-label="Send message"><i class="ri-send-plane-2-line"></i></button>
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- ========== End live chat widget ========== -->
-
 	<script src="<?= site_url('assets/js/aussiewebgrowth.js') . '?v=' . ($vJs ?? date('YmdHis')) ?>" defer></script>
-	<?php $vChat = @filemtime(__DIR__ . '/../assets/js/chat.js') ?: date('YmdHis'); ?>
-	<script src="<?= site_url('assets/js/chat.js') . '?v=' . $vChat ?>" defer></script>
 
 	<!-- Start of HubSpot Embed Code -->
 	<script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/247717771.js"></script>

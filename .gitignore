@@ -1,7 +1,6 @@
 # Runtime data - visitor-submitted leads and logs must never be committed
 data/leads.jsonl
 data/notifications.log
-data/chats.json
 
 # Real admin credentials - never commit these; see config.local.example.php
 config.local.php

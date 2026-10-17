@@ -40,7 +40,6 @@ if (file_exists(__DIR__ . '/config.local.php')) {
 const DATA_DIR      = __DIR__ . '/data';
 const LEADS_FILE    = DATA_DIR . '/leads.jsonl';
 const BLOGS_FILE    = DATA_DIR . '/blogs.json';
-const CHATS_FILE    = DATA_DIR . '/chats.json';
 
 // Blog pagination
 const BLOGS_PER_PAGE = 6;
